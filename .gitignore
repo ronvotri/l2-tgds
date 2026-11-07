@@ -1,0 +1,27 @@
+# Local secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+credentials/
+# Private server/game state and backups
+backups/
+local/
+private/
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.log
+*.bak
+*.zip
+*.7z
+*.rar
+# Temporary output
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
