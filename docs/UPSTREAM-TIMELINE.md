@@ -24,6 +24,9 @@
 | v0.3.9-patch | Bot whisper hỏi trước khi mời party, chênh cấp tối đa 10; archer mua tên; cubics cập nhật ngay; chuyển nghề trước class master | Sao lưu file tùy chỉnh |
 | v0.4.1 (đã được chia sẻ) | Fighter biết đánh thường thay spam skill yếu; playstyles có fallback kiểm soát; support buddy chữa trị cả party, pet; giá bot store công bằng; lưu bot trước khi đóng DB; sửa Olympiad reward | Thay FakePlayers.ini và living-population module.ini; >1 bản sau thì dùng Full |
 | v0.4.2 (đã được chia sẻ) | **500 bot mặc định**, shout từ sự kiện thật, bot nhớ 10 player, tiểu sử/câu thoại (~1700 mảnh), clan war/alliance/grudge, fixes .alt Summoner, Ollama model giữ đã nạp | Thay FakePlayers.ini/module.ini; Shout Living Bot thay town fakes; Trade Chat town fake tắt mặc định |
+| **v0.4.3 hotfix** (chia sẻ 07/11) | Bot nhận lời Party **thực sự gửi invite/đến chỗ player**, slow Healer cast hoàn tất, quest class/pet không kẹt vô hạn, save độc lập khi `LivingPopulation.json` bị khóa, reset clan/castle sạch, invite đúng clan sub-unit | Thay `FakePlayers.ini` và living-population `module.ini`; **Town FakePlayerTradeChat mặc định bật lại**; `QuestStallMinutes` mặc định 180 phút |
+
+Đọc riêng [hotfix v0.4.3](RELEASE-LIVING-WORLDS-0.4.3.md) để biết các từ khóa Party, `QuestStallMinutes`, quy trình reset Living Clan và cảnh báo backup.
 
 ## Cụ thể đáng lưu ý
 
@@ -32,7 +35,7 @@
 - Hỏi shout bằng mẫu tiếng Anh có thể nhận trả lời dựa trên trạng thái thật của clan, raid, siege, bãi săn, người ở Giran.
 - Mỗi living bot nhớ tới **10 người chơi**: gặp, party, bị giết/tấn công/hồi sinh, whisper; quan hệ có thể trở nên thân thiện hoặc thù địch. Duel, Olympiad và PvP công bằng không bị tính thành thù.
 - Clan có thể ghi thù, khai chiến, hòa giải, liên minh và tham gia siege; **chưa chứng minh toàn bộ các hành vi luôn diễn ra hiệu quả trong mọi save**.
-- **FakePlayerTradeChat** cho town bots mặc định off (tác giả nhắc lại riêng).
+- **FakePlayerTradeChat** cho town bots mặc định off **trong v0.4.2**, nhưng được **bật True mặc định trong v0.4.3**.
 
 ### Party v0.4.1
 - Auto Attack 0.25–10 giây sau skill là **tùy chọn cho người chỉnh Playstyle**, chưa áp dụng vào playstyle mặc định.
