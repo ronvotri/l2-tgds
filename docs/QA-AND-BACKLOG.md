@@ -5,7 +5,7 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.
-- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.2 hoặc mới hơn khi có) không làm thay đổi production.
+- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.3 hoặc mới hơn khi có) không làm thay đổi production.
 - [ ] **P0-04** Diff `FakePlayers.ini` và `living-population/config/module.ini` sau patch; chuyển từng setting, không chép nguyên file cũ.
 - [ ] **P0-05** Test NPC, quest, tên skill, item, system message, chat, Community Board, dấu Việt trước/sau update.
 - [ ] **P0-06** Test Stop/restart/restore, kiểm tra level, vật phẩm, Clan, bot memory, raid timers, warehouse, Olympiad reward.
@@ -15,12 +15,21 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 - [ ] **P1-02** Kiểm tra level bắt đầu/đường phát triển của bot mới; thống kê ở 0/1/3/5/10/24 giờ.
 - [ ] **P1-03** Test 100/200/500 bots, Cold Sim 4.0 on/off so tài nguyên; All bots live off/on trong staging.
 - [ ] **P1-04** Player lvl 1–20: hỏi shout tìm bot gần cấp, mời/nhận party, quest, class master.
+- [ ] **P1-04a** Hotfix 0.4.3: `me`/`inv me` trong shout → invite thật; `yes`/`im at Gludio gk` whisper → bot gửi invite, ETA, đi/teleport đến; `ill come to u` → bot chờ và đánh trả khi bị tấn công; `/invite BotName` từ xa; Party có leader.
+- [ ] **P1-04b** Không còn lời hứa suông: thiếu leader, lệch cấp → thông báo đúng lý do, không tự nói đang đến.
 - [ ] **P1-05** Healer/support buddy/pet/servitor: heal, buff, resurrect, tránh heal trùng, summoner dùng crystal/beastshots.
+- [ ] **P1-05a** Hotfix 0.4.3: Heal/Greater Heal/Greater Group Heal hoàn tất khi casting speed thấp (WIT âm, thiếu gear, bị slow), thử cả alt companion và recruited bot.
 - [ ] **P1-06** Clan bot: tạo, gia nhập `.clanjoin`, quest, warehouse, grudge, war/alliance, siege; ghi quan hệ sau restart.
-- [ ] **P1-07** Shout channel (event 30s, câu hỏi world thật, Trade Chat default off), kiểm tra tiếng Việt có hoạt động không.
+- [ ] **P1-06a** v0.4.3: reset population **trên staging** giải tán Living Clans, giải phóng castle, xóa records, tách bot khỏi player clan; bot mới lập clan bình thường.
+- [ ] **P1-06b** Bot gia nhập đúng Royal Guard / Order of Knights / Academy, không bị nhét vào main clan.
+- [ ] **P1-07** Shout channel (event 30s, câu hỏi world thật; **Town Fake Trade Chat default True từ v0.4.3**, off ở v0.4.2), kiểm tra tiếng Việt có hoạt động không.
+- [ ] **P1-07a** Quest stall v0.4.3: `QuestStallMinutes` mặc định 180; class/pet quest hoàn tất theo timer và có reward, side quest drop; bot hunt khởi đầu gần quái nhiệm vụ.
+- [ ] **P1-07b** Khóa `LivingPopulation.json` trong staging: các save town stock, market, clan, siege, raid vẫn hoàn tất; test shutdown/restart.
 - [ ] **P1-08** Thử 2+ client LAN: connect/party/trade/chat/teleport/logout/reconnect, firewall và IP nội bộ.
 
 ## P1 — Client & AI
+
+**Cảnh báo chung:** không có bài test nào được đánh dấu PASS chỉ dựa trên nội dung release note. [Bản hotfix + checklist chi tiết](RELEASE-LIVING-WORLDS-0.4.3.md).
 - [ ] **P1-09** Dựng ma trận Interlude 737 Việt hóa / 746 Archive / Fermata; so hình ảnh, UI, quest, fonts, crashes.
 - [ ] **P1-10** So tốc độ Ollama `gemma3:12b` vs model 4B; đo TTFT, token/sec, VRAM, 1/2/4 request.
 - [ ] **P1-11** Kiểm tra `ollama ps` thực tế có GPU/CPU offload không; v0.4.2 giữ model nạp giải quyết timeout?
