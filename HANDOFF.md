@@ -33,6 +33,15 @@
 5. Thử client 746/Archive/Fermata **song song**, giữ client Việt hóa cũ.
 6. Chỉ sau khi test mới quyết định tích hợp Interlude+; đang [ALPHA].
 
+## Theo dõi tiến độ qua Issue
+- [#1 P0 — Manifest dịch & backup](https://github.com/ronvotri/l2-tgds/issues/1)
+- [#2 P1 — New world, level progression](https://github.com/ronvotri/l2-tgds/issues/2)
+- [#3 P1 — Client/Fermata/Việt hóa](https://github.com/ronvotri/l2-tgds/issues/3)
+- [#4 P1 — Ollama performance](https://github.com/ronvotri/l2-tgds/issues/4)
+- [#5 P2 — Interlude+ Alpha](https://github.com/ronvotri/l2-tgds/issues/5)
+
+[AGENTS.md](AGENTS.md) quy định cách làm việc với Codex; có Issue template cho release/bug mới.
+
 ## Các câu chưa giải đáp
 - Phiên bản Living Worlds nào **thực sự đang chạy**? Có server source/module nào đang được quản lý ở repo khác?
 - File Việt hóa nằm client/server/cả hai, font/encoding gì? Backup ở đâu?
