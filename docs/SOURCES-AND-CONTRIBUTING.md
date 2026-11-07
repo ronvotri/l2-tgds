@@ -10,6 +10,8 @@
 
 **Lưu ý:** Link hình ảnh Discord kèm tham số `ex`/token có thể hết hạn. Không phụ thuộc chúng làm nguồn lưu trữ dài hạn. Link Discord có thể yêu cầu đăng nhập/quyền truy cập; các trích đoạn hội thoại đã chép vào dự án này đóng vai trò tư liệu tóm tắt, không phải chứng thực độc lập.
 
+6. **Living Worlds hotfix v0.4.3**: thông báo Teras được người dùng cung cấp trong cuộc trò chuyện ngày 2026-11-07; nội dung tổng hợp tại [RELEASE-LIVING-WORLDS-0.4.3.md](RELEASE-LIVING-WORLDS-0.4.3.md), kiểm thử tại [Issue #6](https://github.com/ronvotri/l2-tgds/issues/6). Chưa có đường dẫn permalink thông báo hoặc bản vá trực tiếp, vì vậy trạng thái vẫn là [UPSTREAM], **không phải [OBSERVED]**.
+
 ## Nhãn độ tin cậy
 
 - **[UPSTREAM]** Nhà phát triển đã công bố trong đoạn changelog. Chưa có QA độc lập.
