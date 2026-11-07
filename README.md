@@ -41,6 +41,18 @@
 | Server Việt hóa của người dùng | **Chưa có manifest/backup trong repo này**; không suy đoán file dịch nằm phía client hay server |
 | Chạy thử thực tế | **Chưa ghi nhận kết quả kiểm thử có log trong repo** |
 
+## Quản lý công việc qua GitHub Issues
+
+| Ưu tiên | Việc | Issue |
+|---|---|---|
+| P0 | Kiểm kê file Việt hóa và backup có thể khôi phục | [#1](https://github.com/ronvotri/l2-tgds/issues/1) |
+| P1 | Đo bot cùng phát triển trong thế giới mới từ level 1 | [#2](https://github.com/ronvotri/l2-tgds/issues/2) |
+| P1 | So sánh client 737/746/Fermata và tiếng Việt | [#3](https://github.com/ronvotri/l2-tgds/issues/3) |
+| P1 | Benchmark Ollama 12B/4B và nhiều máy | [#4](https://github.com/ronvotri/l2-tgds/issues/4) |
+| P2 | Thử Interlude+ alpha trên staging | [#5](https://github.com/ronvotri/l2-tgds/issues/5) |
+
+**Cho Codex và các phiên làm việc sau:** đọc [AGENTS.md](AGENTS.md) và [HANDOFF.md](HANDOFF.md) trước khi sửa bất cứ thứ gì. Có sẵn mẫu Issue cho [changelog](.github/ISSUE_TEMPLATE/release-research.md) và [QA/bug](.github/ISSUE_TEMPLATE/test-report.md).
+
 ## Nguyên tắc an toàn
 
 - **Không đưa lên GitHub công khai** mật khẩu, token, địa chỉ IP công khai cá nhân, database người chơi, log chứa thông tin riêng tư, client/asset có bản quyền.
