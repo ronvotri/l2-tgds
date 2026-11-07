@@ -32,11 +32,13 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 
 | Bản được công bố | File có nguy cơ bị thay |
 |---|---|
-| v0.4.1 và v0.4.2 | `FakePlayers.ini`, `game/modules/living-population/config/module.ini` |
+| v0.4.1, v0.4.2 **và v0.4.3** | `FakePlayers.ini`, `game/modules/living-population/config/module.ini` (đường dẫn thực tế cần xác nhận ở bản cài) |
 | v0.3.0 | `FakePlayers.ini`, living-population `module.ini`, vùng `data/zones.xml`, `data/zone_combat.tsv` |
 | Một số v0.2.x | `FakePlayers.ini`, living-population `module.ini` |
 | Bản Full nói chung | **Chưa kiểm kê** — phải diff danh sách file trong gói thay vì đoán |
 | v0.4.1 | `Rates.ini` **được công bố không bị patch thay**, nhưng có thêm giá trị mặc định mới |
+
+**v0.4.3 cần kiểm tra:** `FakePlayerTradeChat = True` trở thành **mặc định** (v0.4.2 off), trong khi Shout của Town Fake Bot không tự bật lại; `QuestStallMinutes` mặc định 180 phút. **Reset Living Population không chỉ thay bot mà còn giải tán Living Clans, xóa clan records, giải phóng castle của chúng và cho bot rời player clan trước khi reset.** Không test reset trên production.
 
 **Không chép đè `module.ini`/ `FakePlayers.ini` cũ lên mới.** Phải diff và chỉ chuyển từng giá trị cần giữ; vì setting/default mới có thể được bổ sung.
 
@@ -47,9 +49,20 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 - [ ] Với file đã thay ở upstream: dùng **3-way merge** (base upstream cũ → upstream mới → custom Việt hóa) thay vì chép đè.
 - [ ] Khởi động server test, xem log lỗi; check NPC/quest/đồ/skill/chat Việt hóa có dấu.
 - [ ] Test Living Population, clan, party/healer/pet, Shout, Olympiad, Raid, Cold Sim và `.alt` Summoner.
+- [ ] v0.4.3: bot nhận Party **thực sự gửi invite/tới người chơi**; lời hứa sai biến mất; `/invite BotName` từ xa; healer tốc độ niệm chậm cast xong.
+- [ ] v0.4.3: Trade Chat Town Bot mặc định **True**, class/pet quest kẹt được giải quyết sau timeout và side quest bị bỏ.
+- [ ] v0.4.3: kiểm tra save town stock, market, clan, siege, raid độc lập với file `LivingPopulation.json` đang bị chương trình khác mở (chỉ thử khóa file trên staging).
+- [ ] v0.4.3: nếu định **Reset Living Population**, backup và chụp snapshot castle/clan/unit/records trước; kiểm thử các tác động lên staging.
+- [ ] v0.4.3: lời mời vào **Royal Guard / Order of Knights / Academy** đưa bot vào đúng unit.
 - [ ] Chạy đủ lâu để kiểm tra lag; Stop server, chạy lại, xem DB và nhân vật/bot còn đúng.
 - [ ] Thử Fermata/746 **sau khi** Interlude client chuẩn đã qua smoke test.
 - [ ] Đánh dấu kết quả [OBSERVED] kèm version + thiết bị + bước tái hiện.
+
+## Khi cập nhật v0.4.2 → v0.4.3
+
+- [UPSTREAM] Nếu cách **hơn một phiên bản**, dùng gói **Full**, không chỉ patch.
+- Backup kỹ `FakePlayers.ini`, living-population `module.ini` và **database**. Sau khi patch, xác minh default Trade Chat và giá trị quest stall.
+- Bản sửa **không phải** giấy bảo đảm rằng mọi dữ liệu Việt hóa được giữ nguyên: vẫn cần diff package; với bản Full phải kiểm kê danh sách file bị ghi đè thực tế.
 
 ## Rollback (không được phép làm kiểu nửa vời)
 
