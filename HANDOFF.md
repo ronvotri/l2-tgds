@@ -10,7 +10,8 @@
 - Xem xét client Fermata/746; Interlude+ chỉ khi tương thích, có test đầy đủ.
 
 ## Snapshot thông tin (không có nghĩa đã cài)
-- Living Worlds release note được gửi gần nhất: **v0.4.2**. Dân số mặc định 500; event Shout, nhớ người chơi, clan war/alliance, local Ollama model keep-loaded.
+- Living Worlds release note được gửi gần nhất: **v0.4.3 hotfix** (thông báo tiếp sau v0.4.2): bot đồng ý Party thực sự mời và tìm đến bạn, healer cast chậm không bị cancel, quest kẹt quá 3 giờ được xử lý, Trade Chat Town Bot bật lại mặc định, world save độc lập khi status bị khóa, Reset Living Population giải tán living clans và giải phóng castle. [Chi tiết + QA](docs/RELEASE-LIVING-WORLDS-0.4.3.md).
+- Nền tảng v0.4.2: dân số mặc định 500; event Shout, nhớ người chơi, clan war/alliance, local Ollama model keep-loaded.
 - v0.4.1: AI party/fighter/healer/pet, store economy, server save an toàn.
 - Tư vấn client: nhóm đề nghị chuyển từ **737 sang 746**; Fermata đã có compatibility patch **ban đầu**, chưa xác minh đủ tính năng.
 - Module mở rộng **Interlude+ v0.4.6 alpha**: chỉ hỗ trợ Archive client trong thông báo, chưa chạy kiểm thử nội dung mới.
@@ -22,6 +23,7 @@
 - Phân loại [các hệ thống AI/bot](docs/FEATURE-MAP.md).
 - Soạn [kịch bản chơi lại từ cấp 1](docs/FRESH-WORLD-PLAN.md).
 - Chuẩn hóa [client & rủi ro Việt hóa](docs/CLIENTS-AND-VIET-HOA.md), [quy trình update/rollback](docs/UPGRADE-RUNBOOK.md).
+- Đã bổ sung [hotfix v0.4.3](docs/RELEASE-LIVING-WORLDS-0.4.3.md) vào niên biểu, QA và quy trình cập nhật.
 - Ghi [AI/Ollama](docs/OLLAMA-AND-PERFORMANCE.md), [Interlude+](docs/INTERLUDE-PLUS-ALPHA.md) và [QA/backlog](docs/QA-AND-BACKLOG.md).
 - Gắn [nguồn & nhãn tin cậy](docs/SOURCES-AND-CONTRIBUTING.md).
 
@@ -29,9 +31,10 @@
 1. **Đừng thay đổi game thật khi chưa có backup**: kiểm kê phiên bản, cấu trúc file Việt hóa, DB và cách build/cập nhật server.
 2. Tạo manifest file dịch, checksum, quy trình merge ba chiều; đặt script trong `tools/` nếu được cung cấp các file hợp lệ.
 3. Dựng test staging + một bảng kết quả QA đúng **version/build/client**.
-4. Chạy so sánh 100/200/500 Living Population, Cold Sim/Ollama, phân bố level bot trong world mới.
-5. Thử client 746/Archive/Fermata **song song**, giữ client Việt hóa cũ.
-6. Chỉ sau khi test mới quyết định tích hợp Interlude+; đang [ALPHA].
+4. Khi reset quần thể bot: **v0.4.3 sẽ giải tán Living Clans, thả castle, dọn records và cho bot rời player clan**; phải backup và test riêng.
+5. Chạy so sánh 100/200/500 Living Population, Cold Sim/Ollama, phân bố level bot trong world mới.
+6. Thử client 746/Archive/Fermata **song song**, giữ client Việt hóa cũ.
+7. Chỉ sau khi test mới quyết định tích hợp Interlude+; đang [ALPHA].
 
 ## Theo dõi tiến độ qua Issue
 - [#1 P0 — Manifest dịch & backup](https://github.com/ronvotri/l2-tgds/issues/1)
