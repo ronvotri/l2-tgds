@@ -11,6 +11,22 @@
 
 **Quan trọng:** `737` và `746` là số **protocol**, không phải phiên bản patch gameplay hoặc chất lượng bản dịch. Khuyến nghị chuyển lên 746 không có nghĩa 737 bị cấm.
 
+## Các dự án client khác đã được nhắc
+
+### Lineage II Classic Client — thử nghiệm của Teras
+
+Trước thông báo hỗ trợ Fermata, Teras cho biết đang thử **lớp chuyển đổi giao thức** để đưa một **Classic Client** vào server Living Worlds Interlude, **giữ nguyên logic gameplay Interlude**. Ông đã thử vào thế giới, tương tác NPC và đánh/giết quái, nhưng vẫn gặp lỗi mất kết nối. **Đây là proof of concept, chưa được công bố là client chính thức, không đồng nghĩa Fermata.** Không được nhầm Classic client nói trên với Interlude protocol 746.
+
+### L2 Mod Manager v1.0.2
+
+Công cụ mod client độc lập, không phải bản cập nhật Living Worlds. Theo changelog đã nhận:
+- **Server connection:** chỉnh IP địa chỉ server;
+- **Character name display:** hiện/ẩn tên và khoảng cách hiển thị;
+- **Buy Catalog:** đưa đồ vào danh sách Private Store Buy mà không cần đang cầm vật phẩm;
+- Volume sliders dùng các mức **6, 12, 26, 32, 43** thay vì giá trị tùy ý; sửa nút Configure ở mod không có tùy chọn.
+
+**[UNKNOWN]** Chưa kiểm chứng L2 Mod Manager áp dụng được cho client 737, 746 Việt hóa hay Fermata. Test trên client copy riêng, nhất là các bản vá file `system`.
+
 ## Phân tầng Việt hóa
 
 | Phần dịch | Nằm ở đâu thường gặp | Rủi ro |
