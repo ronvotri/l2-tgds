@@ -42,6 +42,7 @@
 - [#3 P1 — Client/Fermata/Việt hóa](https://github.com/ronvotri/l2-tgds/issues/3)
 - [#4 P1 — Ollama performance](https://github.com/ronvotri/l2-tgds/issues/4)
 - [#5 P2 — Interlude+ Alpha](https://github.com/ronvotri/l2-tgds/issues/5)
+- [#6 P1 — Hotfix 0.4.3 Party/Quest/Save/Reset](https://github.com/ronvotri/l2-tgds/issues/6)
 
 [AGENTS.md](AGENTS.md) quy định cách làm việc với Codex; có Issue template cho release/bug mới.
 
