@@ -2,14 +2,15 @@
 
 > Kho tài liệu tiếng Việt để **theo dõi Living Worlds**, bảo vệ dự án **Việt hóa Lineage II**, thử nghiệm AI bot và chuẩn bị cho việc phát triển tiếp bằng GitHub/Codex.
 >
-> **Cập nhật tài liệu:** 2026-11-07. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
+> **Cập nhật tài liệu:** 2026-11-12. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
 
 ## Đọc từ đâu?
 
 | Tài liệu | Nội dung |
 |---|---|
+| [Living Worlds v0.4.4](docs/RELEASE-LIVING-WORLDS-0.4.4.md) | Seven Signs/Festival, ~50 bãi săn, pet/mount, party matching, cửa hàng bot, grand bosses, sửa memory |
 | [Hotfix v0.4.3](docs/RELEASE-LIVING-WORLDS-0.4.3.md) | Sửa bot nhận lời Party, healer cast chậm, quest kẹt, world saves và reset living clan |
-| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.3 từ những changelog đã thu thập |
+| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.4 từ những changelog đã thu thập |
 | [Bản đồ hệ thống](docs/FEATURE-MAP.md) | Living Population, Phantom, .alt, Clan, kinh tế, ký ức, Cold Sim, AI Brain |
 | [Kế hoạch khởi tạo thế giới](docs/FRESH-WORLD-PLAN.md) | Chơi lại từ level 1 và cùng phát triển với bot; những gì đã có và chưa được xác nhận |
 | [Client & Việt hóa](docs/CLIENTS-AND-VIET-HOA.md) | Interlude 737/746, Fermata, Archive client, nguy cơ đối với bản dịch |
@@ -32,8 +33,9 @@
 
 | Hạng mục | Trạng thái ghi nhận |
 |---|---|
-| Living Worlds | Changelog mới nhất được chia sẻ trong nghiên cứu: **v0.4.3** (hotfix; thông tin do tác giả công bố, chưa có test cục bộ) |
+| Living Worlds | Changelog mới nhất được chia sẻ trong nghiên cứu: **v0.4.4** (chưa test thực tế) (hotfix; thông tin do tác giả công bố, chưa có test cục bộ) |
 | Living Population | Công bố mặc định **500 bot** ở v0.4.2, tạo theo đợt ~3 giờ |
+| v0.4.4 mở rộng | Bot có Party Matching, Seven Signs, Festival, stores thật, pets/mounts và Grand Boss (**on mặc định**); patch thay **Feature.ini + living-population module.ini** |
 | Party & Quest v0.4.3 | Bot đồng ý Party sẽ gửi lời mời/đến thật, chữa quest chuyển nghề kẹt; Trade Chat Town Bot bật mặc định trở lại |
 | Bot xã hội | Ghi nhớ tối đa 10 người chơi; shout, clan war, alliance đã được công bố |
 | AI Brain/Ollama | Tùy chọn, **không bắt buộc để bot săn/lên cấp**; v0.4.2 nêu cải thiện giữ model đã nạp |
@@ -62,7 +64,7 @@
 - Phân biệt: **[UPSTREAM]** tác giả công bố; **[OBSERVED]** đã test có log; **[PLAN]** đề xuất; **[UNKNOWN]** chưa được xác minh.
 - Mọi lần cập nhật phải có bản sao server, database, bản Việt hóa và danh sách file tùy chỉnh; tuyệt đối không chép đè cấu hình cũ lên cấu hình mới một cách mù quáng.
 - Giữ client Interlude gốc hoạt động song song khi thử Fermata hoặc Interlude+.
-- Không nhầm bản Việt hóa với bản mod AI, và không nhầm **Interlude+ v0.4.6** với bản **Living Worlds v0.4.3**.
+- Không nhầm bản Việt hóa với bản mod AI, và không nhầm **Interlude+ v0.4.6** với bản **Living Worlds v0.4.4**.
 
 ## Nguồn tham khảo
 
