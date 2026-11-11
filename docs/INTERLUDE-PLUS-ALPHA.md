@@ -42,5 +42,8 @@ Mở rộng Interlude x1: tiến trình dài hạn theo account, talent, artifac
 - [ ] Kiểm tra các UI mới có tiếng Việt, ký tự/font hợp lệ; không bê thẳng file dịch client khác sang Archive.
 - [ ] Ghi lại cân bằng thực tế: tác giả tự lưu ý payout đang dựa giả định **120 kills/h**, chưa đo trong game.
 
+## Liên quan Living Worlds v0.4.4 (chưa xác minh tương thích)
+Living Worlds v0.4.4 công bố **module hook mới có thể cộng thêm xác suất risky enchant**. Trong Interlude+ v0.4.6 alpha trước đó, nghề Enchanting vẫn **tắt vì thiếu enchant hook**. Hook mới **có thể là tiền đề** để tích hợp, nhưng chưa đủ bằng chứng rằng module alpha tự nhận hook mới hoặc Enchanting đã hoạt động. Không bật trong server Việt hóa hoặc sửa tài liệu thành “đã hỗ trợ” trước khi xem API và thử staging.
+
 ## Kết luận triển khai
 **Chỉ dùng staging.** Đợi bản có kiểm thử thực tế và danh sách tương thích rõ ràng trước khi cân nhắc tích hợp server Việt hóa.
