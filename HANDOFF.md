@@ -46,6 +46,7 @@
 - [#4 P1 — Ollama performance](https://github.com/ronvotri/l2-tgds/issues/4)
 - [#5 P2 — Interlude+ Alpha](https://github.com/ronvotri/l2-tgds/issues/5)
 - [#6 P1 — Hotfix 0.4.3 Party/Quest/Save/Reset](https://github.com/ronvotri/l2-tgds/issues/6)
+- [#7 P1 — v0.4.4 Seven Signs/Party Matching/Grand Boss/memory](https://github.com/ronvotri/l2-tgds/issues/7)
 
 [AGENTS.md](AGENTS.md) quy định cách làm việc với Codex; có Issue template cho release/bug mới.
 
