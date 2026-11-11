@@ -12,6 +12,8 @@
 
 6. **Living Worlds hotfix v0.4.3**: thông báo Teras được người dùng cung cấp trong cuộc trò chuyện ngày 2026-11-07; nội dung tổng hợp tại [RELEASE-LIVING-WORLDS-0.4.3.md](RELEASE-LIVING-WORLDS-0.4.3.md), kiểm thử tại [Issue #6](https://github.com/ronvotri/l2-tgds/issues/6). Chưa có đường dẫn permalink thông báo hoặc bản vá trực tiếp, vì vậy trạng thái vẫn là [UPSTREAM], **không phải [OBSERVED]**.
 
+7. **Living Worlds v0.4.4**: changelog Teras do người dùng chia sẻ ngày **2026-11-12**; [nghiên cứu có cấu hình, rủi ro và QA](RELEASE-LIVING-WORLDS-0.4.4.md). Chưa có release permalink/tệp cài hoặc log xác thực. Trạng thái **[UPSTREAM]**, không phải [OBSERVED].
+
 ## Nhãn độ tin cậy
 
 - **[UPSTREAM]** Nhà phát triển đã công bố trong đoạn changelog. Chưa có QA độc lập.
