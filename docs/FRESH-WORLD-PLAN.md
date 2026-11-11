@@ -6,6 +6,14 @@
 
 Từ v0.3.0 có nút **Wipe Server** (reset database, giữ cấu hình; tạo backup trong Documents theo changelog); v0.3.1 có nút **Reset Living Population** trong Config Editor. Đây là **hai thao tác khác nhau**. **Ở v0.4.3, Reset Living Population còn giải tán Living Clan, giải phóng castle và xóa clan records; bot thuộc player clan cũng rời đi trước khi reset.**
 
+## Ảnh hưởng từ v0.4.4
+
+- **Party Matching** giờ có thể hiển thị Hot Bot tìm nhóm và party room của Hot Bot làm leader, giúp người mới cấp 1 dễ ghép đội hơn (nhưng chưa xác nhận bot xuất phát đồng loạt cấp 1).
+- Bot có **~50 hunting grounds mới** và crowd learning; quan sát phân bố level, bãi săn, tần suất chuyển vùng và khả năng player cấp thấp gặp bot.
+- Bot mở cửa hàng/crafting thật khi nghỉ, pet/mount, Seven Signs; thế giới có hoạt động dài hạn ngay cả khi người chơi không ở gần.
+- **`BotGrandBosses=True` mặc định**: nếu muốn để những Grand Boss cho người thật/chơi cùng bạn bè thì chỉnh False **trong bản cấu hình mới sau backup**. Nếu để bật, bot có thể đánh boss lúc bạn vắng và kích hoạt respawn, dù chúng không tranh boss khi bạn ở lair/đang đánh.
+- Changelog nói đã sửa memory tăng sau nhiều giờ; **chưa có benchmark thực tế**, phải chạy soak test 6/12/24 giờ. [Tài liệu v0.4.4](RELEASE-LIVING-WORLDS-0.4.4.md).
+
 ## Kế hoạch an toàn
 
 ### A. Chuẩn bị
@@ -28,6 +36,7 @@ Ghi snapshot ở 0h, 1h, 3h, 5h, 10h, 24h chơi:
 - Level của người chơi, số party bot có thể gia nhập gần cấp.
 - Clan bot mới, level clan, số raid/war/siege thực tế.
 - Độ trễ teleport; spikes CPU/RAM, tốc độ lưu khi tắt server, kích thước DB/log.
+- v0.4.4: tần suất bot tập trung theo sub-area, Party Matching hoạt động, Seven Signs cycle và AA/boss respawn; theo dõi memory/GC tối thiểu 6–24h.
 - Mức độ dịch tiếng Việt: quest/NPC/shout/skill/đồ ở từng client.
 
 ### C1. Kiểm thử Party v0.4.3 dành cho mục tiêu solo + bot
