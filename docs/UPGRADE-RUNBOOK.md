@@ -9,6 +9,13 @@
 - Cất bản sao **database, toàn bộ server, client Việt hóa, module tùy chỉnh và config** ra nơi riêng, không cùng thư mục cài sẽ ghi đè.
 - Sao lưu **bí mật ngoài GitHub** (đừng commit mật khẩu, database, log riêng tư).
 
+## Lưu ý riêng v0.4.4 [UPSTREAM]
+- Patch v0.4.4 **ghi đè `Feature.ini` và `living-population/module.ini`**. Khác v0.4.3, thông báo **không nói ghi đè `FakePlayers.ini`**; với gói Full, phải tự kiểm kê file thực bị thay.
+- Kiểm tra lại những mặc định có tác động: `BotGrandBosses=True` (bot có thể giết boss lúc người thật vắng), `BotFestivalCountsForScore=False`, `MammonAlwaysSpawned` off, `TestGearAll` off.
+- Sao lưu economy/Seal Stones/AA, Seven Signs cycles, clan/castle, pet/mount, stock/store và full DB trước khi nâng cấp; backup cả client Việt hóa rồi diff.
+- **Lưu ý phạm vi cấu hình:** changelog đề cập `BotFestivalCountsForScore` ở Feature.ini lẫn danh sách module.ini; cần đối chiếu file và Config Editor bản phát hành trước khi chỉnh thực tế.
+- Kiểm tra cập nhật đến v0.4.4 trên **staging** và chạy soak test nhiều giờ để xác minh các lỗi memory/lag; không mặc định hotfix đã test xong.
+
 ## Trước khi update
 
 - [ ] Ghi version cũ/mới, link bản phát hành và thời điểm backup.
@@ -32,6 +39,7 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 
 | Bản được công bố | File có nguy cơ bị thay |
 |---|---|
+| v0.4.4 | `Feature.ini` và living-population `module.ini` theo changelog |
 | v0.4.1, v0.4.2 **và v0.4.3** | `FakePlayers.ini`, `game/modules/living-population/config/module.ini` (đường dẫn thực tế cần xác nhận ở bản cài) |
 | v0.3.0 | `FakePlayers.ini`, living-population `module.ini`, vùng `data/zones.xml`, `data/zone_combat.tsv` |
 | Một số v0.2.x | `FakePlayers.ini`, living-population `module.ini` |
@@ -54,6 +62,7 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 - [ ] v0.4.3: kiểm tra save town stock, market, clan, siege, raid độc lập với file `LivingPopulation.json` đang bị chương trình khác mở (chỉ thử khóa file trên staging).
 - [ ] v0.4.3: nếu định **Reset Living Population**, backup và chụp snapshot castle/clan/unit/records trước; kiểm thử các tác động lên staging.
 - [ ] v0.4.3: lời mời vào **Royal Guard / Order of Knights / Academy** đưa bot vào đúng unit.
+- [ ] v0.4.4: thử Seven Signs/Festival, Party Matching/Private Stores/Manufacture, hot/cold bot, pets/mounts, Grand Boss policy, gear legality, crawl các sub-area và memory after long sessions. [Checklist chi tiết](RELEASE-LIVING-WORLDS-0.4.4.md).
 - [ ] Chạy đủ lâu để kiểm tra lag; Stop server, chạy lại, xem DB và nhân vật/bot còn đúng.
 - [ ] Thử Fermata/746 **sau khi** Interlude client chuẩn đã qua smoke test.
 - [ ] Đánh dấu kết quả [OBSERVED] kèm version + thiết bị + bước tái hiện.
