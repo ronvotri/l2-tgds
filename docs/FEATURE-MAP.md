@@ -6,7 +6,7 @@
 
 | Tên | Vai trò | Tình trạng theo changelog |
 |---|---|---|
-| **Living Population** | Cộng đồng bot tiến triển riêng: lên cấp, săn quái, đồ, tiền, quest, party, clan | Từ v0.2.x; mở rộng xã hội v0.3.8/v0.4.2; v0.4.3 sửa quest bị kẹt |
+| **Living Population** | Cộng đồng bot tiến triển riêng: lên cấp, săn quái, đồ, tiền, quest, party, clan | Từ v0.2.x; mở rộng xã hội v0.3.8/v0.4.2; v0.4.3 sửa quest bị kẹt; v0.4.4 thêm bãi săn, crowd learning, Party Matching, Seven Signs |
 | **Town Fake Players** | Nhân vật tạo không khí thành phố, shop/trade | Có cấu hình FakePlayers.ini; v0.4.2 say/shout/trade tắt mặc định; **v0.4.3 trade bật True**, shout vẫn dành cho living bots |
 | **Field Phantoms** | Bot săn ngoài đồng riêng; không đồng nghĩa Living Population | Có công tắc PhantomFieldHunters (mặc định off từ v0.2.6) |
 | **Party Phantoms / Support Buddies** | Đồng đội đi cùng người chơi, heal/buff/combat | v0.4.1 nâng cấp chăm toàn bộ party/pet |
@@ -46,6 +46,15 @@ Tên cài đặt phụ thuộc phiên bản. Không đưa cấu hình cũ nguyê
 - Healer cast chậm (WIT thấp, slow/no gear) giờ được phép niệm hết `Heal`/`Greater Heal`/`Greater Group Heal`, cả .alt và recruited bots.
 - Save town stock/market/clan/siege/raid không bị bỏ qua chỉ vì `LivingPopulation.json` đang mở/khóa.
 - Bot được mời vào đúng Royal Guard, Order of Knights hoặc Academy thay vì ép vào main clan.
+
+## World & hoạt động từ v0.4.4 [UPSTREAM]
+- **~50 bãi săn mới** và chia vùng lớn thành sub-area theo level/loại quái/tầng; bot đi giữa sub-area bằng chân, không cần về town qua Gatekeeper.
+- **Crowd learning**: quan sát bãi từng săn, thông tin clan/party/láng giềng, giờ đông; bot tìm party khi vùng đông, bám bãi ít nhất **30 phút** và chỉ đổi khi có bãi rõ ràng tốt hơn.
+- **Seven Signs**: bot chọn Dawn (clan/alliance giữ castle), Dusk (không); 6 Catacombs, 8 Necropolises; đổi seal stones thành AA; bot không vote seal; Festival party bot >=5 cùng phe, **không tính điểm theo mặc định**; Mammon unseal gear khi có lợi.
+- **Towns**: bot AFK mở Private Buy/Sell Stores, dwarf crafters mở Manufacture Store phí **10%**, bot mua shots. **Hot Bots** vào Party Matching/party rooms; Cold Bots có thể chuyển Hot để nhập party đang có Hot Bot.
+- **Pets**: Hatchling→Strider, castle lords dùng Wyvern, baby pets (Buffalo/Cougar/Kookaburra), Beast Farm, warehouse giữ pet items.
+- **Boss**: bot có thể đánh **8 Grand Boss khi player vắng**; `BotGrandBosses=True` mặc định, đặt False nếu muốn giữ boss cho người chơi (cần backup trước).
+- **Performance**: theo changelog đã fix hidden bot copies trong hate lists, buff timers và caches tăng vô hạn; cần kiểm thử soak 6–24h. Xem [v0.4.4 đầy đủ](RELEASE-LIVING-WORLDS-0.4.4.md).
 
 ## Các giả thuyết cần kiểm chứng trên một world mới
 
