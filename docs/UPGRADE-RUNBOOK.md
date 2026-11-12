@@ -16,6 +16,13 @@
 - **Lưu ý phạm vi cấu hình:** changelog đề cập `BotFestivalCountsForScore` ở Feature.ini lẫn danh sách module.ini; cần đối chiếu file và Config Editor bản phát hành trước khi chỉnh thực tế.
 - Kiểm tra cập nhật đến v0.4.4 trên **staging** và chạy soak test nhiều giờ để xác minh các lỗi memory/lag; không mặc định hotfix đã test xong.
 
+## Lưu ý riêng v0.4.5 [UPSTREAM]
+- Patch **ghi đè `living-population/module.ini`, `General.ini`, `Rates.ini`**. Không mặc nhiên coi `Feature.ini` hay `FakePlayers.ini` bị thay theo patch 0.4.5, dù bản **Full** vẫn phải diff toàn cây file.
+- **`CustomBuyListLoad=False` mặc định mới.** Nếu dùng shop lists do bạn tự tạo/Việt hóa/tùy chỉnh, cần đặt **True** để server nạp chúng. Điều này không nhất thiết xóa file shop, nhưng dễ khiến người chơi hiểu nhầm chúng biến mất.
+- `Rates.ini` có diễn giải mới; xử lý drop amount **chỉ item stackable**, có never-drop list và công tắc không rơi sách kỹ năng; kiểm tra cách merge rates cũ/mới.
+- Server có mới Clan Hall auctions/sieges, Castle tax/Manor, Noble/Olympiad/Hero: backup **DB, castle ownership, clan hall ownership, Olympiad status, inventory, shop lists** trước khi chạy staging.
+- Nếu castle vô chủ không bán seed/nhận crop, đây là **thay đổi retail mặc định**; `ManorSteward=True` có thể phục hồi stock manor toàn castle; kiểm tra vị trí setting trong cấu hình thực.
+
 ## Trước khi update
 
 - [ ] Ghi version cũ/mới, link bản phát hành và thời điểm backup.
@@ -39,6 +46,7 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 
 | Bản được công bố | File có nguy cơ bị thay |
 |---|---|
+| v0.4.5 | `living-population/module.ini`, `General.ini`, `Rates.ini` theo thông báo |
 | v0.4.4 | `Feature.ini` và living-population `module.ini` theo changelog |
 | v0.4.1, v0.4.2 **và v0.4.3** | `FakePlayers.ini`, `game/modules/living-population/config/module.ini` (đường dẫn thực tế cần xác nhận ở bản cài) |
 | v0.3.0 | `FakePlayers.ini`, living-population `module.ini`, vùng `data/zones.xml`, `data/zone_combat.tsv` |
@@ -62,6 +70,7 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 - [ ] v0.4.3: kiểm tra save town stock, market, clan, siege, raid độc lập với file `LivingPopulation.json` đang bị chương trình khác mở (chỉ thử khóa file trên staging).
 - [ ] v0.4.3: nếu định **Reset Living Population**, backup và chụp snapshot castle/clan/unit/records trước; kiểm thử các tác động lên staging.
 - [ ] v0.4.3: lời mời vào **Royal Guard / Order of Knights / Academy** đưa bot vào đúng unit.
+- [ ] v0.4.5: test Castle tax/manor/mercenaries, đấu giá/đánh Clan Hall, tiến trình Noblesse/Olympiad/Hero, player autopilot rewards, Dyes/Augment/Fishing; test custom buylists với `CustomBuyListLoad=True` nếu có, rates mới; các lỗi pathfinding/cursed weapons/Queen Ant. [Checklist](RELEASE-LIVING-WORLDS-0.4.5.md).
 - [ ] v0.4.4: thử Seven Signs/Festival, Party Matching/Private Stores/Manufacture, hot/cold bot, pets/mounts, Grand Boss policy, gear legality, crawl các sub-area và memory after long sessions. [Checklist chi tiết](RELEASE-LIVING-WORLDS-0.4.4.md).
 - [ ] Chạy đủ lâu để kiểm tra lag; Stop server, chạy lại, xem DB và nhân vật/bot còn đúng.
 - [ ] Thử Fermata/746 **sau khi** Interlude client chuẩn đã qua smoke test.
