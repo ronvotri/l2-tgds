@@ -26,11 +26,13 @@
 | v0.4.2 (đã được chia sẻ) | **500 bot mặc định**, shout từ sự kiện thật, bot nhớ 10 player, tiểu sử/câu thoại (~1700 mảnh), clan war/alliance/grudge, fixes .alt Summoner, Ollama model giữ đã nạp | Thay FakePlayers.ini/module.ini; Shout Living Bot thay town fakes; Trade Chat town fake tắt mặc định |
 | **v0.4.3 hotfix** (chia sẻ 07/11) | Bot nhận lời Party **thực sự gửi invite/đến chỗ player**, slow Healer cast hoàn tất, quest class/pet không kẹt vô hạn, save độc lập khi `LivingPopulation.json` bị khóa, reset clan/castle sạch, invite đúng clan sub-unit | Thay `FakePlayers.ini` và living-population `module.ini`; **Town FakePlayerTradeChat mặc định bật lại**; `QuestStallMinutes` mặc định 180 phút |
 
-Đọc [v0.4.4](RELEASE-LIVING-WORLDS-0.4.4.md) cho Seven Signs, Grand Boss mặc định bật, hiệu năng và QA.
+Đọc [v0.4.5](RELEASE-LIVING-WORLDS-0.4.5.md) về Castle/Clan Hall/Olympiad/Manor và thay đổi cấu hình shop trước khi đọc [v0.4.4](RELEASE-LIVING-WORLDS-0.4.4.md) cho Seven Signs, Grand Boss mặc định bật, hiệu năng và QA.
 
 Đọc riêng [hotfix v0.4.3](RELEASE-LIVING-WORLDS-0.4.3.md) để biết các từ khóa Party, `QuestStallMinutes`, quy trình reset Living Clan và cảnh báo backup.
 
 | **v0.4.4** (chia sẻ 12/11) | Thêm ~50 grounds, sub-area, crowd learning, Seven Signs/Festival/Mammon, Strider/Wyvern/Baby Pets, private/manufacture stores, Party Matching hot bots, bot Grand Boss, chỉ gear hợp lệ, sửa memory/lag Cold Sim | **Thay Feature.ini và living-population module.ini**; BotGrandBosses=True mặc định, BotFestivalCountsForScore=False, TestGearAll off; [chi tiết](RELEASE-LIVING-WORLDS-0.4.4.md) |
+
+| **v0.4.5** (chia sẻ 12/11) | Living Clans quản lý castle tax/manor/mercenaries, đấu giá/đánh Clan Hall sieges, Clan Skills/Academy, bot Noblesse thi Olympiad Cold/Hot, Hero; Dyes/Augment/Fishing, pathfinding và raid fixes | Patch thay **living-population module.ini, General.ini, Rates.ini**; **CustomBuyListLoad=False** mặc định; [chi tiết](RELEASE-LIVING-WORLDS-0.4.5.md) |
 
 ## Cụ thể đáng lưu ý
 
