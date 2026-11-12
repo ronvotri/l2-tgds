@@ -6,7 +6,7 @@
 
 | Tên | Vai trò | Tình trạng theo changelog |
 |---|---|---|
-| **Living Population** | Cộng đồng bot tiến triển riêng: lên cấp, săn quái, đồ, tiền, quest, party, clan | Từ v0.2.x; mở rộng xã hội v0.3.8/v0.4.2; v0.4.3 sửa quest bị kẹt; v0.4.4 thêm bãi săn, crowd learning, Party Matching, Seven Signs |
+| **Living Population** | Cộng đồng bot tiến triển riêng: lên cấp, săn quái, đồ, tiền, quest, party, clan | Từ v0.2.x; mở rộng xã hội v0.3.8/v0.4.2; v0.4.3 sửa quest bị kẹt; v0.4.4 thêm bãi săn, crowd learning, Party Matching, Seven Signs; v0.4.5 Castle/Clan Hall/Olympiad/Noblesse |
 | **Town Fake Players** | Nhân vật tạo không khí thành phố, shop/trade | Có cấu hình FakePlayers.ini; v0.4.2 say/shout/trade tắt mặc định; **v0.4.3 trade bật True**, shout vẫn dành cho living bots |
 | **Field Phantoms** | Bot săn ngoài đồng riêng; không đồng nghĩa Living Population | Có công tắc PhantomFieldHunters (mặc định off từ v0.2.6) |
 | **Party Phantoms / Support Buddies** | Đồng đội đi cùng người chơi, heal/buff/combat | v0.4.1 nâng cấp chăm toàn bộ party/pet |
@@ -55,6 +55,18 @@ Tên cài đặt phụ thuộc phiên bản. Không đưa cấu hình cũ nguyê
 - **Pets**: Hatchling→Strider, castle lords dùng Wyvern, baby pets (Buffalo/Cougar/Kookaburra), Beast Farm, warehouse giữ pet items.
 - **Boss**: bot có thể đánh **8 Grand Boss khi player vắng**; `BotGrandBosses=True` mặc định, đặt False nếu muốn giữ boss cho người chơi (cần backup trước).
 - **Performance**: theo changelog đã fix hidden bot copies trong hate lists, buff timers và caches tăng vô hạn; cần kiểm thử soak 6–24h. Xem [v0.4.4 đầy đủ](RELEASE-LIVING-WORLDS-0.4.4.md).
+
+## Clan, Castle và nhân vật cấp cao ở v0.4.5 [UPSTREAM]
+- **ClanCastleOps/CastleMercenaries/BotManor**: bot Clan quản trị thuế, Manor, phòng thủ/thuê lính ở Castle; Manor tại castle vô chủ không bán seed hay mua crop theo retail, `ManorSteward=True` khôi phục stock Manor mọi Castle.
+- **ClanHalls/HallSieges**: đấu giá và sử dụng Clan Hall; đánh Fortress of Resistance, Devastated Castle, Fortress of the Dead, Rainbow Springs, Bandit Stronghold, Wild Beast Reserve; bot để yên hall của Clan người chơi hoặc đã được Clan người chơi đăng ký; save siege qua restart.
+- **ClanSkills/AcademyGraduates**: dùng Clan Reputation học Clan Skills; bot tốt nghiệp Academy chuyển vào main clan nếu còn slot.
+- **NoblessePath/ColdOlympiad/HotOlympiad/BotHeroes**: bot thực hiện tiến trình Noblesse; bot Cold đấu Olympiad mô phỏng, Hot tham gia queue thật; Hero bot dùng đúng vũ khí và Hero Chat.
+- **BotDyes/BotAugmentation/BotFishingRewards**: Dyes, Life Stones, thu hoạch cá/rương, mở rộng Inventory/Storage.
+- **RaceShareHuman/Elf/DarkElf/Orc/Dwarf**: tỷ lệ chủng tộc của **bot sinh mới**, chưa có chứng cứ tự đổi bot hiện hữu; `NamedBots=False` tắt ba bot tên riêng.
+- **General.ini**: `CustomBuyListLoad=False` mặc định, có custom buylist thì phải bật True sau cập nhật; Rates.ini có bộ lọc never-drop/No skill books và chỉ tăng lượng đồ stackable.
+- **Fixes**: Elven Village deck, Heretic Catacomb nhiều tầng, Zariche/Akamanah bot không đứng town, Queen Ant ưu tiên Nurse Ants; giảm startup XML warnings.
+
+Tài liệu đầy đủ: [v0.4.5](RELEASE-LIVING-WORLDS-0.4.5.md).
 
 ## Các giả thuyết cần kiểm chứng trên một world mới
 
