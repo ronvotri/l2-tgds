@@ -5,7 +5,8 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.
-- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.4 hoặc mới hơn khi có) không làm thay đổi production.
+- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.5 hoặc mới hơn khi có) không làm thay đổi production.
+- [ ] **P0-04a** v0.4.5: patch ghi đè module.ini, `General.ini`, `Rates.ini`; **`CustomBuyListLoad=False` mặc định**, test custom buylist và tất cả file Việt hóa/custom NPC/shop; merge config thay vì ghi đè bản cũ.
 - [ ] **P0-04** Diff `FakePlayers.ini` và `living-population/config/module.ini` khi relevant; **v0.4.4 patch thay `Feature.ini` + living-population `module.ini`**. Chuyển từng setting, không chép nguyên file cũ.
 - [ ] **P0-05** Test NPC, quest, tên skill, item, system message, chat, Community Board, dấu Việt trước/sau update.
 - [ ] **P0-06** Test Stop/restart/restore, kiểm tra level, vật phẩm, Clan, bot memory, raid timers, warehouse, Olympiad reward.
@@ -41,6 +42,17 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 - [ ] **P1-23** Admin gear display; test-gear & TestGearAll luôn off production.
 - [ ] **P1-24** Dấu Việt trong NPC Priest, Seven Signs, Festival, Mammon, store, party matching, mount/pet UI.
 
+## P1 — v0.4.5: chính trị Clan và tiến trình endgame
+- [ ] **P1-25** Castle management: tax, manor, gates/walls, mercenaries dùng Clan treasury; castle vô chủ không bán seed/mua crops, `ManorSteward` True thay đổi theo mong đợi.
+- [ ] **P1-26** Clan Hall auctions & siege tại 6 khu, không động tới hall do player sở hữu/đăng ký; siege state tồn tại sau restart.
+- [ ] **P1-27** Clan Skills lấy Reputation, AcademyGraduates chuyển main clan nếu còn slot.
+- [ ] **P1-28** Bot Noblesse progression, ColdOlympiad mô phỏng, HotOlympiad queue thật, BotHeroes vũ khí/chat, player autopilot reward.
+- [ ] **P1-29** BotDyes, BotAugmentation, BotFishingRewards, học Expand Inventory/Storage.
+- [ ] **P1-30** RaceShares cho bot sinh mới, NamedBots=False và các bot aiSateriok/aiSonOfZion/aiTeras.
+- [ ] **P1-31** Rates.ini: never-drop, No skill books, lượng drop chỉ nhân cho item stackable; `l2admin` rate pages đồng bộ; custom buylists chỉ được nạp khi `CustomBuyListLoad=True`.
+- [ ] **P1-32** Navigation Elven Village/HERETIC catacomb nhiều tầng; Cursed Weapon bot field hunting, Queen Ant nurses trước; XML warnings.
+- [ ] **P1-33** Việt hóa NPC Manor Manager, Clan Hall, Symbol Maker, Fishing Guild, Olympiad, Hero channel; server/client font và chuỗi mới.
+
 ## P1 — Client & AI
 
 **Cảnh báo chung:** không có bài test nào được đánh dấu PASS chỉ dựa trên nội dung release note. [Bản hotfix + checklist chi tiết](RELEASE-LIVING-WORLDS-0.4.3.md).
@@ -55,6 +67,8 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 - [ ] **P2-03** Việt hóa câu thoại mới và 1.700 template/profile mảnh v0.4.2 sau khi kiểm kê vị trí thật.
 - [ ] **P2-04** Thử **Interlude+ v0.4.6 alpha** chỉ trên staging Archive client sạch; làm bảng compatibility riêng.
 - [ ] **P2-05** Thử L2 Mod Manager v1.0.2 trên bản sao client, không patch đè file Việt hóa.
+
+**V0.4.5:** [release và QA](RELEASE-LIVING-WORLDS-0.4.5.md).
 
 **V0.4.4:** [release study và QA chi tiết](RELEASE-LIVING-WORLDS-0.4.4.md).
 
