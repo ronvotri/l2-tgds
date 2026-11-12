@@ -14,6 +14,13 @@ Từ v0.3.0 có nút **Wipe Server** (reset database, giữ cấu hình; tạo b
 - **`BotGrandBosses=True` mặc định**: nếu muốn để những Grand Boss cho người thật/chơi cùng bạn bè thì chỉnh False **trong bản cấu hình mới sau backup**. Nếu để bật, bot có thể đánh boss lúc bạn vắng và kích hoạt respawn, dù chúng không tranh boss khi bạn ở lair/đang đánh.
 - Changelog nói đã sửa memory tăng sau nhiều giờ; **chưa có benchmark thực tế**, phải chạy soak test 6/12/24 giờ. [Tài liệu v0.4.4](RELEASE-LIVING-WORLDS-0.4.4.md).
 
+## Ảnh hưởng tới mục tiêu chơi lại cùng bot từ v0.4.5 [UPSTREAM]
+- Bot Clan giờ không chỉ chiếm thành mà còn thu thuế, vận hành Manor, gia cố Castle, mua quân; đấu giá/đánh Clan Hall sieges, học Clan Skills và thăng tiến Academy.
+- Bot Noblesse có thể đấu Olympiad mô phỏng hoặc thật trong arena; Hero bots xuất hiện. **Đây là hoạt động endgame**, không xác nhận bot mới sinh đồng bộ level 1 cùng player.
+- Nếu muốn cảm giác server x1 từ đầu, chú ý **Castle vô chủ không có Manor seeds/crop buying**, trừ khi dùng `ManorSteward=True`. Hệ thống này ảnh hưởng game economy, không phải lỗi Việt hóa.
+- Nếu có **shop lists tùy chỉnh**, sau bản v0.4.5 bật lại `CustomBuyListLoad=True` trong `General.ini`; mặc định mới False.
+- Cần kiểm tra CustomBuyListLoad, Rates.ini, module.ini và phần NPC Việt hóa khi cập nhật; [changelog đầy đủ](RELEASE-LIVING-WORLDS-0.4.5.md).
+
 ## Kế hoạch an toàn
 
 ### A. Chuẩn bị
