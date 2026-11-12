@@ -14,6 +14,8 @@
 
 7. **Living Worlds v0.4.4**: changelog Teras do người dùng chia sẻ ngày **2026-11-12**; [nghiên cứu có cấu hình, rủi ro và QA](RELEASE-LIVING-WORLDS-0.4.4.md). Chưa có release permalink/tệp cài hoặc log xác thực. Trạng thái **[UPSTREAM]**, không phải [OBSERVED].
 
+8. **Living Worlds v0.4.5**: changelog Teras do người dùng chia sẻ ngày **2026-11-12**; [tóm tắt/cấu hình/QA](RELEASE-LIVING-WORLDS-0.4.5.md). Chưa có permalink release và chưa có test thực nghiệm. Nhãn **[UPSTREAM]**, không phải **[OBSERVED]**.
+
 ## Nhãn độ tin cậy
 
 - **[UPSTREAM]** Nhà phát triển đã công bố trong đoạn changelog. Chưa có QA độc lập.
