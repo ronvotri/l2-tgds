@@ -58,6 +58,7 @@
 | P2 | Thử Interlude+ alpha trên staging | [#5](https://github.com/ronvotri/l2-tgds/issues/5) |
 | P1 | Kiểm chứng hotfix v0.4.3, Party/Quest/Reset Clan/Save | [#6](https://github.com/ronvotri/l2-tgds/issues/6) |
 | P1 | Kiểm chứng v0.4.4: Seven Signs, Party Matching, bot stores, Grand Boss, memory | [#7](https://github.com/ronvotri/l2-tgds/issues/7) |
+| P1 | Kiểm chứng v0.4.5: Castle, Clan Hall, Olympiad, Manor, Rates & CustomBuyList | [#8](https://github.com/ronvotri/l2-tgds/issues/8) |
 
 **Cho Codex và các phiên làm việc sau:** đọc [AGENTS.md](AGENTS.md) và [HANDOFF.md](HANDOFF.md) trước khi sửa bất cứ thứ gì. Có sẵn mẫu Issue cho [changelog](.github/ISSUE_TEMPLATE/release-research.md) và [QA/bug](.github/ISSUE_TEMPLATE/test-report.md).
 
