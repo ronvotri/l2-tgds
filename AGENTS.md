@@ -29,3 +29,13 @@ Maintain this Vietnamese research-and-handoff repository about Lineage II Living
 
 ## Definition of done
 User-visible artifact or commit; docs reflect actual changes; no lost translations; build/version/log recorded; rollback known. **Writing a plan is not equivalent to modifying the game.**
+
+## Share release policy (owner confirmed 2026-11-14)
+- The full Vietnamese portable distribution already shared is release **1.0**, based on Living Worlds v0.4.5. Freeze its ZIP/checksum; never rebuild it from a played demo.
+- Release **1.0.1** is the first cumulative patch, based on Living Worlds v0.4.6. Preserve each published patch and checksum.
+- Every later patch must be **cumulative from 1.0**, including all earlier localization, launcher and compatibility changes still needed. A user installs 1.0 plus ONLY the latest patch; no sequential patch chain.
+- Support both untouched 1.0 and already updated 1.0.x, plus re-running the same patch. Never downgrade a newer release or discard local settings/saves.
+- Test those upgrade paths, configuration merge, protected-file checks, graceful save/shutdown and rollback. Changed core structure still requires rebuilding/merging the mods; never overlay an old JAR onto a new native core.
+- Keep share release numbers (1.0.x), Living Worlds upstream versions and Interlude+ alpha versions distinct.
+- Each update must include a short Vietnamese group announcement: version, 2–4 actual changes, latest-patch instruction, and save/AI preservation where verified. Save it with the release and return the copy-ready text to the owner; do not post to their group automatically.
+- Public GitHub holds docs, original maintenance scripts, sanitized manifests/checksums and QA summaries. Keep game/AI binaries, databases, accounts, player memory and logs outside the repository.

@@ -1,6 +1,9 @@
 # Runbook cập nhật Living Worlds mà không mất Việt hóa/save
 
-> Checklist dành cho **bản server cá nhân đã Việt hóa**. Không thay thế hướng dẫn cụ thể của launcher/phát hành đúng version. Trạng thái bản cài và vị trí file Việt hóa trên máy hiện **chưa được kiểm kê**.
+> Checklist dành cho **bản server cá nhân đã Việt hóa**. Không thay thế hướng dẫn cụ thể của launcher/phát hành đúng version. Đã có kiểm kê và lượt cập nhật cục bộ 1.0.1 ngày 2026-11-14; xem [báo cáo](RELEASE-SHARE-1.0.1.md).
+
+## Bản chia sẻ Việt hóa
+Bản đầy đủ **1.0** là mốc bất biến. **Chỉ cài patch cộng dồn mới nhất**, không cài lần lượt các patch trung gian. Đã có 1.0.1 cho Living Worlds v0.4.6. Giữ mọi patch và checksum đã phát hành; quy trình xây patch kế tiếp tại [SHARE-RELEASES](SHARE-RELEASES.md). Dùng installer Việt hóa cho bản chia sẻ, không dùng updater upstream ghi đè.
 
 ## Nguyên tắc 0: Không ghi đè bản chính để thử
 
