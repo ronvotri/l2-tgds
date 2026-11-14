@@ -2,6 +2,13 @@
 
 Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc trước khi đưa vào sử dụng nhiều máy, **P2** = tính năng mở rộng. Dấu checkbox là **chưa test trong repo**, không phải lỗi đã được xác minh.
 
+## Kiểm chứng mới nhất — 1.0.1 / Living Worlds v0.4.6
+[OBSERVED, 2026-11-14] Đã biên dịch 927 scripts, khởi động hai bản đủ 6 module và AI demo, kiểm tra config, hash Việt hóa, giữ inventory/save khi cài, cài lặp và rollback. [Báo cáo chi tiết](RELEASE-SHARE-1.0.1.md).
+- [ ] Đánh raid thực tế với 4 đội phụ, kiểm tra vị trí/né AOE và loot.
+- [ ] Soak memory/GC nhiều giờ để kiểm chứng fix upstream.
+- [ ] Với patch tiếp theo: test cùng gói từ 1.0 sạch và 1.0.1 đang dùng; không yêu cầu chuỗi patch trung gian.
+Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì smoke test khởi động thành công.
+
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.

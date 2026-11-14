@@ -46,3 +46,8 @@
 - Chỉ lưu **tóm tắt/kịch bản cấu hình**, không đẩy dữ liệu tài khoản, log lộ địa chỉ cá nhân, key/token, bản game hay dữ liệu của người chơi.
 - Khi chưa biết layout server hiện tại, hướng dẫn phải là **quy trình kiểm kê/diff/rollback**, không tự ghi file config cụ thể vào production.
 - Mọi thay đổi docs nên cập nhật [HANDOFF](../HANDOFF.md) và [QA](QA-AND-BACKLOG.md) để Codex tiếp tục được.
+
+## Nguồn và kiểm chứng bổ sung 2026-11-14
+- [Feed chính thức](https://updates.l2livingworlds.space/releases.json) công bố Living Worlds v0.4.6 ngày 2026-11-14; [ZIP patch](https://updates.l2livingworlds.space/releases/v0.4.6-patch/L2J-Offline-Patch.zip) đã tải và đối chiếu với v0.4.5.
+- [OBSERVED] Việt hóa 1.0.1 đã build/cài và smoke test cục bộ. Repo công khai chỉ có [tóm tắt QA](RELEASE-SHARE-1.0.1.md), metadata/hash; không chứa game binaries, SQL, player memory hay log cá nhân.
+- Raid AI và memory fix trong changelog vẫn mang nhãn [UPSTREAM] cho đến khi test gameplay/soak tương ứng.

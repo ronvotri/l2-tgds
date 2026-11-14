@@ -1,6 +1,6 @@
-# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-12)
+# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-14)
 
-> **[UPSTREAM]** Các mục dưới đây dựa trên changelog/thông báo cộng đồng được người dùng chép vào cuộc trò chuyện. **Chưa có xác nhận là các bản đã được cài trên máy.** Không tự lấp các phiên bản thiếu bằng suy đoán. Mốc thời gian là ngày bài đăng khi có trong nội dung; một số mốc không có ngày chính xác.
+> **[UPSTREAM]** Các mục dưới đây dựa trên changelog/thông báo cộng đồng được người dùng chép vào cuộc trò chuyện. Các mục lịch sử không mặc nhiên là bản đã cài. Riêng v0.4.6 đã có [smoke test Việt hóa 1.0.1](RELEASE-SHARE-1.0.1.md). Không tự lấp các phiên bản thiếu bằng suy đoán. Mốc thời gian là ngày bài đăng khi có trong nội dung; một số mốc không có ngày chính xác.
 
 ## Dòng thời gian
 
@@ -33,6 +33,10 @@
 | **v0.4.4** (chia sẻ 12/11) | Thêm ~50 grounds, sub-area, crowd learning, Seven Signs/Festival/Mammon, Strider/Wyvern/Baby Pets, private/manufacture stores, Party Matching hot bots, bot Grand Boss, chỉ gear hợp lệ, sửa memory/lag Cold Sim | **Thay Feature.ini và living-population module.ini**; BotGrandBosses=True mặc định, BotFestivalCountsForScore=False, TestGearAll off; [chi tiết](RELEASE-LIVING-WORLDS-0.4.4.md) |
 
 | **v0.4.5** (chia sẻ 12/11) | Living Clans quản lý castle tax/manor/mercenaries, đấu giá/đánh Clan Hall sieges, Clan Skills/Academy, bot Noblesse thi Olympiad Cold/Hot, Hero; Dyes/Augment/Fishing, pathfinding và raid fixes | Patch thay **living-population module.ini, General.ini, Rates.ini**; **CustomBuyListLoad=False** mặc định; [chi tiết](RELEASE-LIVING-WORLDS-0.4.5.md) |
+
+## Living Worlds v0.4.6 — 2026-11-14
+[UPSTREAM] Thêm tối đa 4 đội phụ raid, đội hình quanh boss/né AOE, recipe chasers, restock và sửa rò bộ nhớ. [Nguồn](https://updates.l2livingworlds.space/releases.json).
+[OBSERVED] Đã gộp thành bản Việt hóa 1.0.1 và kiểm tra khởi động; chưa đánh raid/soak nhiều giờ. [Chi tiết](RELEASE-SHARE-1.0.1.md). Không nhầm với Interlude+ v0.4.6 alpha.
 
 ## Cụ thể đáng lưu ý
 

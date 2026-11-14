@@ -1,0 +1,5 @@
+🎮 L2 Việt hóa 1.0.1 đã có!
+• Thêm đội phụ đi raid, bot đánh boss thông minh hơn.
+• Sửa lỗi gây lag khi chơi lâu theo bản cập nhật gốc.
+• Việt hóa mục raid mới, giữ AI, cấu hình và tiến trình.
+Đã có bản 1.0 thì tải patch mới nhất (~7,8 MB), giải nén cạnh CHOI-NGAY.bat rồi chạy CAP-NHAT-1.0.1.bat. Không cần tải lại game/AI hay cài từng patch.

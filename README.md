@@ -2,7 +2,14 @@
 
 > Kho tài liệu tiếng Việt để **theo dõi Living Worlds**, bảo vệ dự án **Việt hóa Lineage II**, thử nghiệm AI bot và chuẩn bị cho việc phát triển tiếp bằng GitHub/Codex.
 >
-> **Cập nhật tài liệu:** 2026-11-12. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
+> **Cập nhật tài liệu:** 2026-11-14. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
+
+## Bản chia sẻ hiện tại
+- **1.0:** bản đầy đủ đã chia sẻ, nền Living Worlds v0.4.5; giữ nguyên làm mốc.
+- **1.0.1:** patch cộng dồn lên Living Worlds v0.4.6, đã kiểm tra cục bộ ngày 2026-11-14.
+- **Từ nay: cài 1.0 + patch mới nhất**, không cần cài lần lượt các patch trung gian. Ai đã cập nhật 1.0.x cũng dùng cùng patch mới nhất khi được hỗ trợ.
+- [Nội dung 1.0.1 và kiểm thử](docs/RELEASE-SHARE-1.0.1.md) · [Quy ước patch cộng dồn](docs/SHARE-RELEASES.md) · [Thông báo đăng group](announcements/1.0.1.txt).
+- Repo lưu tài liệu, checksum và báo cáo sạch; ZIP game/AI và patch chứa tài nguyên game được phân phối riêng, không nằm trong Git.
 
 ## Đọc từ đâu?
 
@@ -11,7 +18,7 @@
 | [Living Worlds v0.4.5](docs/RELEASE-LIVING-WORLDS-0.4.5.md) | Castle tax/manor, Clan Hall auctions/sieges, Noblesse/Olympiad/Hero, dyes/augments, Rates/shops |
 | [Living Worlds v0.4.4](docs/RELEASE-LIVING-WORLDS-0.4.4.md) | Seven Signs/Festival, ~50 bãi săn, pet/mount, party matching, cửa hàng bot, grand bosses, sửa memory |
 | [Hotfix v0.4.3](docs/RELEASE-LIVING-WORLDS-0.4.3.md) | Sửa bot nhận lời Party, healer cast chậm, quest kẹt, world saves và reset living clan |
-| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.5 từ những changelog đã thu thập |
+| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.6 từ những changelog đã thu thập |
 | [Bản đồ hệ thống](docs/FEATURE-MAP.md) | Living Population, Phantom, .alt, Clan, kinh tế, ký ức, Cold Sim, AI Brain |
 | [Kế hoạch khởi tạo thế giới](docs/FRESH-WORLD-PLAN.md) | Chơi lại từ level 1 và cùng phát triển với bot; những gì đã có và chưa được xác nhận |
 | [Client & Việt hóa](docs/CLIENTS-AND-VIET-HOA.md) | Interlude 737/746, Fermata, Archive client, nguy cơ đối với bản dịch |
@@ -30,11 +37,11 @@
 4. Ưu tiên **phản hồi AI nhanh và server ổn định**, có khả năng kết nối từ nhiều máy LAN.
 5. Quản lý các thử nghiệm qua tài liệu, issue, log, checkpoint; không thay đổi server sản xuất nếu chưa có backup và kiểm thử.
 
-## Trạng thái nghiên cứu (không phải trạng thái đã cài trên máy)
+## Trạng thái nghiên cứu và kiểm thử
 
 | Hạng mục | Trạng thái ghi nhận |
 |---|---|
-| Living Worlds | Changelog mới nhất được chia sẻ trong nghiên cứu: **v0.4.5** (chưa test thực tế) (hotfix; thông tin do tác giả công bố, chưa có test cục bộ) |
+| Living Worlds | **v0.4.6**: [UPSTREAM] raid allies/raid formations/memory fix; [OBSERVED] bản gốc và demo Việt hóa đã khởi động thành công, đủ 6 module. Chưa test raid thực tế/soak nhiều giờ. |
 | Living Population | Công bố mặc định **500 bot** ở v0.4.2, tạo theo đợt ~3 giờ |
 | v0.4.5 mở rộng | Bot Clan quản trị Castle/Clan Hall, Noblesse và Olympiad/Hero, sử dụng dyes/augments; patch thay **module.ini, General.ini, Rates.ini**; `CustomBuyListLoad=False` mặc định |
 | v0.4.4 mở rộng | Bot có Party Matching, Seven Signs, Festival, stores thật, pets/mounts và Grand Boss (**on mặc định**); patch thay **Feature.ini + living-population module.ini** |
@@ -44,8 +51,8 @@
 | Client Interlude | Nhóm khuyên **protocol 746** thay 737 để tương thích Fermata tốt hơn; không có nghĩa 737 bị vô hiệu hóa |
 | Fermata | Đã công bố **patch tương thích ban đầu** với Living Worlds; phải test từng chức năng |
 | Interlude+ | **v0.4.6 alpha của module**, không phải phiên bản server Living Worlds; client pack chỉ nhắm Archive Client |
-| Server Việt hóa của người dùng | **Chưa có manifest/backup trong repo này**; không suy đoán file dịch nằm phía client hay server |
-| Chạy thử thực tế | **Chưa ghi nhận kết quả kiểm thử có log trong repo** |
+| Server Việt hóa của người dùng | [OBSERVED] đã kiểm kê, sao lưu SQL và giữ lớp Việt hóa riêng cục bộ; repo chỉ lưu manifest phát hành sạch và QA, không chứa save hay game binaries. |
+| Chạy thử thực tế | [OBSERVED] 927 Java scripts biên dịch; server/AI/module startup, giữ save/config, cài lặp và rollback đã kiểm tra. [Báo cáo 1.0.1](docs/RELEASE-SHARE-1.0.1.md). |
 
 ## Quản lý công việc qua GitHub Issues
 
@@ -68,7 +75,7 @@
 - Phân biệt: **[UPSTREAM]** tác giả công bố; **[OBSERVED]** đã test có log; **[PLAN]** đề xuất; **[UNKNOWN]** chưa được xác minh.
 - Mọi lần cập nhật phải có bản sao server, database, bản Việt hóa và danh sách file tùy chỉnh; tuyệt đối không chép đè cấu hình cũ lên cấu hình mới một cách mù quáng.
 - Giữ client Interlude gốc hoạt động song song khi thử Fermata hoặc Interlude+.
-- Không nhầm bản Việt hóa với bản mod AI, và không nhầm **Interlude+ v0.4.6** với bản **Living Worlds v0.4.5**.
+- Không nhầm bản Việt hóa với bản mod AI, và không nhầm **Interlude+ v0.4.6** với bản **Living Worlds v0.4.6**.
 
 ## Nguồn tham khảo
 
