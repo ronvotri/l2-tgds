@@ -68,6 +68,12 @@ Tên cài đặt phụ thuộc phiên bản. Không đưa cấu hình cũ nguyê
 
 Tài liệu đầy đủ: [v0.4.5](RELEASE-LIVING-WORLDS-0.4.5.md).
 
+## Hotfix v0.4.7-patch — dungeon và tiến trình tân thủ [UPSTREAM]
+- Living Bot trong Party theo người chơi vào **Elven Ruins**, dùng Gatekeeper có phí, đến entrance phía **bên trong**. Bot/quái không còn bị mắc trên mặt đất phía trên **Elven Fortress** hoặc đáy biển phía trên Elven Ruins; bot không chase quái khác tầng.
+- Bot rời newbie area khi quái yếu: Human Talking Island và Dark Elf **lv9**, Orc/Dwarf **lv10**, Elf **lv11**. Bot lv5+ khi bãi đông chuyển qua fields thay vì đồng loạt tìm Party.
+- Living Bot Party có giới hạn thành viên theo level: **3 (<20), 5 (20–39), 7 (40–51), 9 (52+)**; nếu vượt giới hạn thì thành viên **cao level nhất rời trước**. Chưa chắc chắn quy tắc tương tự áp dụng cho Party player-only.
+- Cần test staging và kiểm tra bản Việt hóa; [chi tiết](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
+
 ## Các giả thuyết cần kiểm chứng trên một world mới
 
 - [UNKNOWN] Có thể bắt đầu **toàn bộ** living bots tại level 1 cùng nhân vật mới hay không?
