@@ -9,10 +9,21 @@ Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc tr�
 - [ ] Với patch tiếp theo: test cùng gói từ 1.0 sạch và 1.0.1 đang dùng; không yêu cầu chuỗi patch trung gian.
 Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì smoke test khởi động thành công.
 
+## Bản v0.4.7-patch — chưa triển khai, cần QA
+- [ ] **P0-07** Backup và merge 5 file patch thay (`living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini`); tránh mất rates, CustomBuyListLoad, Grand Boss policy và config riêng.
+- [ ] **P0-08** Khi xây patch Việt hóa **cộng dồn** mới: test trên **1.0 sạch** và **1.0.1**, cài lặp, rollback, checksums và save/inventory/AI modules; **chưa ghi đã build**.
+- [ ] **P1-34** Party Bot đi cùng người chơi vào Elven Ruins có trả tiền Gatekeeper, đến vị trí **phía trong**; không đứng ngoài/dưới biển.
+- [ ] **P1-35** Bot Elven Fortress không săn ở mặt đất bên trên; monster dungeon ở đúng spawn; bot không chase tầng khác.
+- [ ] **P1-36** Tại ngưỡng bot rời newbie: Human Talking Island/Dark Elf lv9, Orc/Dwarf lv10, Elf lv11; lv5+ khi bãi đông chuyển ra fields.
+- [ ] **P1-37** Party Living Bot tối đa 3 (<20), 5 (20–39), 7 (40–51), 9 (52+), kick level cao nhất khi vượt; test có player và không có player.
+- [ ] **P1-38** QA Việt hóa câu thoại Party/dungeon/Gatekeeper, không spawn/chase sai tầng, không giảm EXP/SP bất thường khi farm.
+
+**Chi tiết [UPSTREAM] và kịch bản test:** [Living Worlds v0.4.7-patch](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
+
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.
-- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.5 hoặc mới hơn khi có) không làm thay đổi production.
+- [ ] **P0-03** Dựng **staging** từ backup, cập nhật mục tiêu (v0.4.7-patch hoặc mới hơn khi có) không làm thay đổi production.
 - [ ] **P0-04a** v0.4.5: patch ghi đè module.ini, `General.ini`, `Rates.ini`; **`CustomBuyListLoad=False` mặc định**, test custom buylist và tất cả file Việt hóa/custom NPC/shop; merge config thay vì ghi đè bản cũ.
 - [ ] **P0-04** Diff `FakePlayers.ini` và `living-population/config/module.ini` khi relevant; **v0.4.4 patch thay `Feature.ini` + living-population `module.ini`**. Chuyển từng setting, không chép nguyên file cũ.
 - [ ] **P0-05** Test NPC, quest, tên skill, item, system message, chat, Community Board, dấu Việt trước/sau update.
