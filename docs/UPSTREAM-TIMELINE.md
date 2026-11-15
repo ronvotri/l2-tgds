@@ -1,4 +1,4 @@
-# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-14)
+# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-15)
 
 > **[UPSTREAM]** Các mục dưới đây dựa trên changelog/thông báo cộng đồng được người dùng chép vào cuộc trò chuyện. Các mục lịch sử không mặc nhiên là bản đã cài. Riêng v0.4.6 đã có [smoke test Việt hóa 1.0.1](RELEASE-SHARE-1.0.1.md). Không tự lấp các phiên bản thiếu bằng suy đoán. Mốc thời gian là ngày bài đăng khi có trong nội dung; một số mốc không có ngày chính xác.
 
@@ -37,6 +37,10 @@
 ## Living Worlds v0.4.6 — 2026-11-14
 [UPSTREAM] Thêm tối đa 4 đội phụ raid, đội hình quanh boss/né AOE, recipe chasers, restock và sửa rò bộ nhớ. [Nguồn](https://updates.l2livingworlds.space/releases.json).
 [OBSERVED] Đã gộp thành bản Việt hóa 1.0.1 và kiểm tra khởi động; chưa đánh raid/soak nhiều giờ. [Chi tiết](RELEASE-SHARE-1.0.1.md). Không nhầm với Interlude+ v0.4.6 alpha.
+
+## Living Worlds v0.4.7-patch — thông báo 2026-11-15
+
+[UPSTREAM] Bot Party theo player vào Elven Ruins và trả phí Gatekeeper; sửa bot/quái đứng trên vùng đất/đáy biển phía trên Elven Fortress và Elven Ruins, tránh đuổi quái khác tầng. Bot newbie rời khu khi quái quá yếu: Human Talking Island & Dark Elf **lv9**, Orc & Dwarf **lv10**, Elf **lv11**; từ lv5 bãi đông chuyển sang fields. Party Living Bot giới hạn **3 (<20), 5 (20+), 7 (40+), 9 (52+)**; loại thành viên cấp cao nhất nếu nhóm quá đông. Patch thay **living-population module.ini, General.ini, Rates.ini, Feature.ini, test-gear module.ini**; nếu cũ hơn v0.4.4 dùng **Full**. Chưa có [OBSERVED] gameplay; [chi tiết](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
 ## Cụ thể đáng lưu ý
 
