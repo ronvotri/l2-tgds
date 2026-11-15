@@ -1,0 +1,5 @@
+🎮 L2 Việt hóa 1.0.2 đã có!
+• Bot theo đội vào Elven Ruins; sửa săn sai tầng ở Elven Ruins/Elven Fortress.
+• Bot rời bãi tân thủ hợp lý hơn, đội bot tăng quy mô theo cấp.
+• Giữ Việt hóa, AI, cấu hình và tiến trình; gồm toàn bộ sửa lỗi của 1.0.1.
+Có 1.0 hoặc 1.0.1: chỉ tải patch 1.0.2, giải nén cạnh CHOI-NGAY.bat rồi chạy CAP-NHAT-1.0.2.bat. Không cần cài từng patch hay tải lại game/AI.

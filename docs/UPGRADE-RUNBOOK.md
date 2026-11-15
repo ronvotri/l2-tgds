@@ -3,14 +3,14 @@
 > Checklist dành cho **bản server cá nhân đã Việt hóa**. Không thay thế hướng dẫn cụ thể của launcher/phát hành đúng version. Đã có kiểm kê và lượt cập nhật cục bộ 1.0.1 ngày 2026-11-14; xem [báo cáo](RELEASE-SHARE-1.0.1.md).
 
 ## Bản chia sẻ Việt hóa
-Bản đầy đủ **1.0** là mốc bất biến. **Chỉ cài patch cộng dồn mới nhất**, không cài lần lượt các patch trung gian. Đã có 1.0.1 cho Living Worlds v0.4.6. Giữ mọi patch và checksum đã phát hành; quy trình xây patch kế tiếp tại [SHARE-RELEASES](SHARE-RELEASES.md). Dùng installer Việt hóa cho bản chia sẻ, không dùng updater upstream ghi đè.
+Bản đầy đủ **1.0** là mốc bất biến. **Chỉ cài patch cộng dồn mới nhất**, không cài lần lượt các patch trung gian. Đã có **1.0.2 cho Living Worlds v0.4.7**, gồm sửa của 1.0.1; nâng trực tiếp từ 1.0 hoặc 1.0.1. Giữ mọi patch và checksum đã phát hành; quy trình xây patch kế tiếp tại [SHARE-RELEASES](SHARE-RELEASES.md). Dùng installer Việt hóa cho bản chia sẻ, không dùng updater upstream ghi đè.
 
 ## Chú ý Living Worlds v0.4.7-patch [UPSTREAM]
 - Nếu **bản upstream đang cài cũ hơn v0.4.4**, nhà phát triển yêu cầu **Full download** thay vì riêng patch.
 - **Patch đè 5 file**: `living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini` (xác nhận đường dẫn chính xác trên máy trước khi sửa). Back up và 3-way merge config.
 - Nếu dùng custom shop lists, kiểm tra `CustomBuyListLoad` trong `General.ini`; nếu có chính sách Grand Boss riêng, kiểm tra `BotGrandBosses` trong living-population module.ini; giữ rates/EXP/drop/Seven Signs/tùy chọn test-gear cũ nếu vẫn phù hợp.
 - **Không** reset database/world chỉ vì changelog nói sửa dungeon; không có thông báo bắt buộc reset.
-- **Đối với gói Việt hóa đã chia sẻ:** checkpoint [OBSERVED] hiện là bản full **1.0** nền v0.4.5 và patch cộng dồn **1.0.1** nền v0.4.6. Chưa phát bản v0.4.7 Việt hóa. Patch kế tiếp phải gồm **tất cả chênh lệch từ gói 1.0**, test installer trên **1.0 sạch, 1.0.1 đang chạy, cài lặp và rollback**, không chỉ phát nguyên upstream patch làm người dùng mất Việt hóa.
+- **Đối với gói Việt hóa đã chia sẻ:** đã phát **1.0.2 / v0.4.7**, test nâng từ 1.0 và 1.0.1, cài lặp và rollback. [Báo cáo](RELEASE-SHARE-1.0.2.md). Các lần sau tiếp tục cộng dồn từ 1.0; không dùng nguyên upstream patch để ghi đè Việt hóa.
 - Checklist về Party/dungeon: [v0.4.7-patch](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
 ## Nguyên tắc 0: Không ghi đè bản chính để thử

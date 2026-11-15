@@ -39,3 +39,6 @@ User-visible artifact or commit; docs reflect actual changes; no lost translatio
 - Keep share release numbers (1.0.x), Living Worlds upstream versions and Interlude+ alpha versions distinct.
 - Each update must include a short Vietnamese group announcement: version, 2–4 actual changes, latest-patch instruction, and save/AI preservation where verified. Save it with the release and return the copy-ready text to the owner; do not post to their group automatically.
 - Public GitHub holds docs, original maintenance scripts, sanitized manifests/checksums and QA summaries. Keep game/AI binaries, databases, accounts, player memory and logs outside the repository.
+
+## Latest verified checkpoint (2026-11-15)
+Patch **1.0.2 / Living Worlds v0.4.7** is cumulative from 1.0. Genuine 1.0 and 1.0.1 upgrade paths converge; installer/config/save/rollback and server/AI/module smoke tests passed. Live dungeon gameplay remains NOT RUN. Preserve frozen 1.0 and 1.0.1 artifacts. See `docs/RELEASE-SHARE-1.0.2.md`.

@@ -1,0 +1,24 @@
+{
+  "release": "1.0.2",
+  "base_release": "1.0",
+  "cumulative": true,
+  "includes_releases": [
+    "1.0.1",
+    "1.0.2"
+  ],
+  "supported_upgrade_from": [
+    "1.0",
+    "1.0.1",
+    "1.0.2"
+  ],
+  "upstream_version": "v0.4.7",
+  "published_date": "2026-11-15",
+  "artifact": "L2-VietHoa-Patch-1.0-len-1.0.2.zip",
+  "bytes": 7766138,
+  "sha256": "e2f9d49d05b288ab9d4d4229400ae2e1077d94d085acdbc43a2c8baa9b29531a",
+  "baseline_sha256": "5d4618000ea00cc59d8ddd779a5905536e0e72b33805c576a624f5a6e624c2e5",
+  "artifact_distribution": "separate-from-git",
+  "qa_summary": "../docs/RELEASE-SHARE-1.0.2.md",
+  "announcement": "../announcements/1.0.2.txt",
+  "live_dungeon_tested": false
+}
