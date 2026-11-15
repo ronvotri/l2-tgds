@@ -5,6 +5,14 @@
 ## Bản chia sẻ Việt hóa
 Bản đầy đủ **1.0** là mốc bất biến. **Chỉ cài patch cộng dồn mới nhất**, không cài lần lượt các patch trung gian. Đã có 1.0.1 cho Living Worlds v0.4.6. Giữ mọi patch và checksum đã phát hành; quy trình xây patch kế tiếp tại [SHARE-RELEASES](SHARE-RELEASES.md). Dùng installer Việt hóa cho bản chia sẻ, không dùng updater upstream ghi đè.
 
+## Chú ý Living Worlds v0.4.7-patch [UPSTREAM]
+- Nếu **bản upstream đang cài cũ hơn v0.4.4**, nhà phát triển yêu cầu **Full download** thay vì riêng patch.
+- **Patch đè 5 file**: `living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini` (xác nhận đường dẫn chính xác trên máy trước khi sửa). Back up và 3-way merge config.
+- Nếu dùng custom shop lists, kiểm tra `CustomBuyListLoad` trong `General.ini`; nếu có chính sách Grand Boss riêng, kiểm tra `BotGrandBosses` trong living-population module.ini; giữ rates/EXP/drop/Seven Signs/tùy chọn test-gear cũ nếu vẫn phù hợp.
+- **Không** reset database/world chỉ vì changelog nói sửa dungeon; không có thông báo bắt buộc reset.
+- **Đối với gói Việt hóa đã chia sẻ:** checkpoint [OBSERVED] hiện là bản full **1.0** nền v0.4.5 và patch cộng dồn **1.0.1** nền v0.4.6. Chưa phát bản v0.4.7 Việt hóa. Patch kế tiếp phải gồm **tất cả chênh lệch từ gói 1.0**, test installer trên **1.0 sạch, 1.0.1 đang chạy, cài lặp và rollback**, không chỉ phát nguyên upstream patch làm người dùng mất Việt hóa.
+- Checklist về Party/dungeon: [v0.4.7-patch](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
+
 ## Nguyên tắc 0: Không ghi đè bản chính để thử
 
 - Ghi **server version hiện tại → target version**; nếu cách hơn **một bản**, changelog v0.4.x khuyên dùng **Full download**, không chỉ Patch.
@@ -49,6 +57,7 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 
 | Bản được công bố | File có nguy cơ bị thay |
 |---|---|
+| v0.4.7-patch | `living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini` |
 | v0.4.5 | `living-population/module.ini`, `General.ini`, `Rates.ini` theo thông báo |
 | v0.4.4 | `Feature.ini` và living-population `module.ini` theo changelog |
 | v0.4.1, v0.4.2 **và v0.4.3** | `FakePlayers.ini`, `game/modules/living-population/config/module.ini` (đường dẫn thực tế cần xác nhận ở bản cài) |
