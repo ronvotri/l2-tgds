@@ -35,6 +35,8 @@ Cập nhật: **2026-11-15**. Đọc [AGENTS.md](AGENTS.md) trước khi làm ti
 - Tên thư mục v0.4.5 không quyết định phiên bản demo hiện tại; đọc `portable.json`, `share-release.json` và `launcher/version.txt`.
 - Backup SQL, save, log, bộ game và model nằm cục bộ; không đưa lên repo công khai.
 
+- Theo dõi [Issue #10](https://github.com/ronvotri/l2-tgds/issues/10) để kiểm chứng hotfix v0.4.7 và chuẩn bị patch Việt hóa cộng dồn **khi có bản cài thực tế**, không coi là đã phát hành.
+
 ## Nghiên cứu còn mở
 - Đánh raid với 4 đội phụ và kiểm tra di chuyển/né AOE; soak memory/GC dài giờ.
 - Benchmark 100/200/500 bots, GPU/VRAM, độ trễ AI và tiến trình thế giới mới.
