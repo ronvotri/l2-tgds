@@ -1,5 +1,10 @@
 # HANDOFF — L2-TGDS / Living Worlds
-Cập nhật: **2026-11-14**. Đọc [AGENTS.md](AGENTS.md) trước khi làm tiếp.
+Cập nhật: **2026-11-15**. Đọc [AGENTS.md](AGENTS.md) trước khi làm tiếp.
+
+## Changelog upstream mới chưa triển khai [UPSTREAM]
+- **Living Worlds v0.4.7-patch**: Elven Ruins/Elven Fortress sửa bot hoặc quái trên mặt đất/đáy biển phía trên dungeon; Party bot theo người chơi vào Elven Ruins, có trả phí Gatekeeper; không chase quái khác tầng. Bot newbie rời bãi Human/Talking Island và Dark Elf lv9, Orc/Dwarf lv10, Elf lv11; Party Living Bot giới hạn 3 (<20), 5 (20+), 7 (40+), 9 (52+); level 5+ bãi đông đi farm các cánh đồng. [Changelog/QA](docs/RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
+- Upstream patch ghi đè **living-population module.ini, General.ini, Rates.ini, Feature.ini, test-gear module.ini**. Nếu bản hiện cài cũ hơn **v0.4.4**, upstream yêu cầu gói Full.
+- **Chưa cập nhật server hoặc phát patch Việt hóa v0.4.7** qua lượt nghiên cứu này. Giữ nguyên checkpoint [OBSERVED] v0.4.6, bản chia sẻ 1.0/1.0.1. Khi build patch Việt hóa mới phải tuân thủ **1.0 + patch cộng dồn mới nhất**, test từ 1.0 sạch và 1.0.1, so sánh/merge 5 config mà không làm mất save/Việt hóa.
 
 ## Trạng thái đã kiểm chứng [OBSERVED]
 - Máy chủ chính và demo chia sẻ đã lên **Living Worlds v0.4.6**, giữ bản dịch và các mod.
