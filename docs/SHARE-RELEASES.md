@@ -5,10 +5,10 @@ Quy ước do chủ dự án xác nhận ngày **2026-11-14**.
 | Dòng | Hiện tại | Ý nghĩa |
 |---|---|---|
 | Bản đầy đủ Việt hóa | 1.0 | Mốc ZIP cố định, nền Living Worlds v0.4.5 |
-| Patch Việt hóa | 1.0.1 | Patch cộng dồn từ 1.0, nền Living Worlds v0.4.6 |
-| Living Worlds | v0.4.6 | Phiên bản upstream; không phải Interlude+ alpha |
+| Patch Việt hóa | 1.0.2 | Patch cộng dồn từ 1.0, nền Living Worlds v0.4.7 |
+| Living Worlds | v0.4.7 | Phiên bản upstream; không phải Interlude+ alpha |
 
-**Người có 1.0 chỉ tải patch mới nhất.** Khi có 1.0.2, đường đi là `1.0 → 1.0.2`, hoặc `1.0.1 → 1.0.2` với cùng gói; không bắt cài 1.0.1 trước. Đây là chính sách cho các bản tiếp theo, không phải khẳng định 1.0.2 đã tồn tại.
+**Người có 1.0 chỉ tải patch mới nhất.** Bản hiện tại 1.0.2 có đường đi `1.0 → 1.0.2`, hoặc `1.0.1 → 1.0.2` với cùng gói; không bắt cài 1.0.1 trước. Cả hai đường đã test cho cùng payload đích. Các bản sau tiếp tục cùng quy tắc.
 
 ## Bảo quản mốc
 - Giữ nguyên ZIP đầy đủ 1.0 và SHA256. Không đóng gói lại từ thư mục demo đã chơi.

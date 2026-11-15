@@ -66,3 +66,6 @@
 2. Đánh dấu [UPSTREAM]; chỉ nâng thành [OBSERVED] khi có bước test + log.
 3. Cập nhật [FEATURE-MAP](FEATURE-MAP.md), [QA](QA-AND-BACKLOG.md) và các cảnh báo file bị ghi đè.
 4. Không suy luận version đang cài trên máy chỉ từ version được nhắc ở Discord.
+
+### Triển khai Việt hóa 1.0.2 — 2026-11-15 [OBSERVED]
+Đã tải/đối chiếu ZIP v0.4.7, dựng core Việt hóa, cài bản chính/demo và kiểm tra module/AI/installer. Gameplay dungeon vẫn NOT RUN. [Báo cáo](RELEASE-SHARE-1.0.2.md).

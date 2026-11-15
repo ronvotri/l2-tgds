@@ -2,16 +2,19 @@
 
 Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc trước khi đưa vào sử dụng nhiều máy, **P2** = tính năng mở rộng. Dấu checkbox là **chưa test trong repo**, không phải lỗi đã được xác minh.
 
-## Kiểm chứng mới nhất — 1.0.1 / Living Worlds v0.4.6
+## Kiểm chứng mới nhất — 1.0.2 / Living Worlds v0.4.7
+[OBSERVED 2026-11-15] Đã test nâng từ bộ tệp thật 1.0 và từ 1.0.1 cho cùng payload; giữ save/config/giới tính, cài lặp, chống downgrade/code drift và rollback. Bản gốc/demo khởi động đủ 6 module và AI, inventory không đổi; 437 tệp dữ liệu demo không đổi bởi bước cài. [Báo cáo](RELEASE-SHARE-1.0.2.md). Chưa chơi thử dungeon.
+
+## Kiểm chứng trước — 1.0.1 / Living Worlds v0.4.6
 [OBSERVED, 2026-11-14] Đã biên dịch 927 scripts, khởi động hai bản đủ 6 module và AI demo, kiểm tra config, hash Việt hóa, giữ inventory/save khi cài, cài lặp và rollback. [Báo cáo chi tiết](RELEASE-SHARE-1.0.1.md).
 - [ ] Đánh raid thực tế với 4 đội phụ, kiểm tra vị trí/né AOE và loot.
 - [ ] Soak memory/GC nhiều giờ để kiểm chứng fix upstream.
 - [ ] Với patch tiếp theo: test cùng gói từ 1.0 sạch và 1.0.1 đang dùng; không yêu cầu chuỗi patch trung gian.
 Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì smoke test khởi động thành công.
 
-## Bản v0.4.7-patch — chưa triển khai, cần QA
-- [ ] **P0-07** Backup và merge 5 file patch thay (`living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini`); tránh mất rates, CustomBuyListLoad, Grand Boss policy và config riêng.
-- [ ] **P0-08** Khi xây patch Việt hóa **cộng dồn** mới: test trên **1.0 sạch** và **1.0.1**, cài lặp, rollback, checksums và save/inventory/AI modules; **chưa ghi đã build**.
+## Bản v0.4.7-patch — đã triển khai 1.0.2, còn gameplay QA
+- [x] **P0-07** [OBSERVED 1.0.2] Đã đối chiếu ZIP, backup, merge và giữ giá trị config.  Backup và merge 5 file patch thay (`living-population/module.ini`, `General.ini`, `Rates.ini`, `Feature.ini`, `test-gear/module.ini`); tránh mất rates, CustomBuyListLoad, Grand Boss policy và config riêng.
+- [x] **P0-08** [OBSERVED 1.0.2] Đã test đủ hai đường nâng cấp và installer.  Khi xây patch Việt hóa **cộng dồn** mới: test trên **1.0 sạch** và **1.0.1**, cài lặp, rollback, checksums và save/inventory/AI modules; [báo cáo đã build/test](RELEASE-SHARE-1.0.2.md).
 - [ ] **P1-34** Party Bot đi cùng người chơi vào Elven Ruins có trả tiền Gatekeeper, đến vị trí **phía trong**; không đứng ngoài/dưới biển.
 - [ ] **P1-35** Bot Elven Fortress không săn ở mặt đất bên trên; monster dungeon ở đúng spawn; bot không chase tầng khác.
 - [ ] **P1-36** Tại ngưỡng bot rời newbie: Human Talking Island/Dark Elf lv9, Orc/Dwarf lv10, Elf lv11; lv5+ khi bãi đông chuyển ra fields.

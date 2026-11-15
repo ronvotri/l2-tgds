@@ -56,7 +56,7 @@ Theo tác giả:
 Tại checkpoint repo ngày **2026-11-14**:
 - **1.0** là gói đầy đủ cố định dựa trên Living Worlds **v0.4.5**.
 - **1.0.1** là patch **cộng dồn** được kiểm thử cài/rollback ở mức smoke, nâng nền lên **Living Worlds v0.4.6**.
-- **Chưa có bản phát hành Việt hóa v0.4.7 được xác minh từ changelog này.**
+- **[OBSERVED 2026-11-15] Đã phát Việt hóa 1.0.2 / v0.4.7**, test installer từ 1.0 và 1.0.1, khởi động server/AI/modules. [Báo cáo](RELEASE-SHARE-1.0.2.md). Gameplay dungeon chưa test.
 - Khi chuẩn bị patch Việt hóa kế tiếp, không phát riêng `v0.4.7-patch` upstream cho người dùng của gói chia sẻ. Theo [SHARE-RELEASES](SHARE-RELEASES.md), hãy tạo **patch cộng dồn từ nền 1.0**, chứa cả cập nhật sau 1.0, dịch/changes, migration config, backup, kiểm thử trên 1.0 sạch và 1.0.1 rồi mới công bố.
 - Không nhầm **Living Worlds v0.4.7-patch** với **Interlude+ v0.4.6 alpha**.
 
@@ -66,7 +66,7 @@ Tại checkpoint repo ngày **2026-11-14**:
 - [ ] Kiểm kê gói upstream Full/Patch theo build chính xác; so sánh SHA/list file với baseline v0.4.6 nếu chuẩn bị cập nhật thật.
 - [ ] Backup server/DB/client/bản dịch và 5 file config; merge cấu hình, giữ các thiết lập EXP/drop/custom buylists.
 - [ ] Kiểm tra `CustomBuyListLoad` vẫn giữ như bản đang dùng và `BotGrandBosses` vẫn theo lựa chọn chủ server; tránh vô tình reset giá trị khi module.ini/General.ini bị đè.
-- [ ] Test cài patch cộng dồn từ **gói full 1.0 sạch** và **1.0.1**, cài lặp/rollback, không tải lại 13GB hoặc bắt cài lần lượt (theo quy ước dự án).
+- [x] [OBSERVED 1.0.2] Test cài patch cộng dồn từ **gói full 1.0 sạch** và **1.0.1**, cài lặp/rollback, không tải lại 13GB hoặc bắt cài lần lượt (theo quy ước dự án).
 - [ ] Test tiếng Việt, Party/NPC Gatekeeper/Quest, save/inventory/pet/clan và restart.
 
 ### P1 — Dungeon & newbie

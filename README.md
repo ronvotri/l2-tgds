@@ -6,9 +6,10 @@
 
 ## Bản chia sẻ hiện tại
 - **1.0:** bản đầy đủ đã chia sẻ, nền Living Worlds v0.4.5; giữ nguyên làm mốc.
-- **1.0.1:** patch cộng dồn lên Living Worlds v0.4.6, đã kiểm tra cục bộ ngày 2026-11-14.
+- **1.0.2 mới nhất:** patch cộng dồn lên Living Worlds v0.4.7, đã kiểm tra ngày 2026-11-15; gồm sửa lỗi của 1.0.1.
+- **1.0.1:** giữ nguyên ZIP/checksum đã phát hành.
 - **Từ nay: cài 1.0 + patch mới nhất**, không cần cài lần lượt các patch trung gian. Ai đã cập nhật 1.0.x cũng dùng cùng patch mới nhất khi được hỗ trợ.
-- [Nội dung 1.0.1 và kiểm thử](docs/RELEASE-SHARE-1.0.1.md) · [Quy ước patch cộng dồn](docs/SHARE-RELEASES.md) · [Thông báo đăng group](announcements/1.0.1.txt).
+- [Nội dung và kiểm thử 1.0.2](docs/RELEASE-SHARE-1.0.2.md) · [Patch cộng dồn](docs/SHARE-RELEASES.md) · [Thông báo group](announcements/1.0.2.txt).
 - Repo lưu tài liệu, checksum và báo cáo sạch; ZIP game/AI và patch chứa tài nguyên game được phân phối riêng, không nằm trong Git.
 
 ## Đọc từ đâu?
@@ -42,7 +43,7 @@
 
 | Hạng mục | Trạng thái ghi nhận |
 |---|---|
-| Living Worlds | **v0.4.7-patch [UPSTREAM]** đã nhận changelog, **chưa có build Việt hóa hoặc gameplay test**; **v0.4.6 [OBSERVED]**: [UPSTREAM] raid allies/raid formations/memory fix; [OBSERVED] bản gốc và demo Việt hóa đã khởi động thành công, đủ 6 module. Chưa test raid thực tế/soak nhiều giờ. |
+| Living Worlds | **v0.4.7 [OBSERVED]**: đã gộp Việt hóa 1.0.2, khởi động bản gốc/demo đủ 6 module và AI; chưa chơi thử dungeon trực tiếp. [Báo cáo](docs/RELEASE-SHARE-1.0.2.md). |
 | Living Population | Công bố mặc định **500 bot** ở v0.4.2, tạo theo đợt ~3 giờ |
 | v0.4.7-patch | Bot theo người chơi vào Elven Ruins, sửa dungeon z/floor; bot rời bãi newbie sớm, Party bot 3/5/7/9 theo level; upstream patch ghi đè **5 config** |
 | v0.4.5 mở rộng | Bot Clan quản trị Castle/Clan Hall, Noblesse và Olympiad/Hero, sử dụng dyes/augments; patch thay **module.ini, General.ini, Rates.ini**; `CustomBuyListLoad=False` mặc định |
@@ -54,7 +55,7 @@
 | Fermata | Đã công bố **patch tương thích ban đầu** với Living Worlds; phải test từng chức năng |
 | Interlude+ | **v0.4.6 alpha của module**, không phải phiên bản server Living Worlds; client pack chỉ nhắm Archive Client |
 | Server Việt hóa của người dùng | [OBSERVED] đã kiểm kê, sao lưu SQL và giữ lớp Việt hóa riêng cục bộ; repo chỉ lưu manifest phát hành sạch và QA, không chứa save hay game binaries. |
-| Chạy thử thực tế | [OBSERVED] 927 Java scripts biên dịch; server/AI/module startup, giữ save/config, cài lặp và rollback đã kiểm tra. [Báo cáo 1.0.1](docs/RELEASE-SHARE-1.0.1.md). |
+| Chạy thử thực tế | [OBSERVED] 927 Java scripts biên dịch; server/AI/module startup, giữ save/config, cài lặp và rollback đã kiểm tra. [Báo cáo 1.0.2](docs/RELEASE-SHARE-1.0.2.md). |
 
 ## Quản lý công việc qua GitHub Issues
 
