@@ -21,6 +21,12 @@ Từ v0.3.0 có nút **Wipe Server** (reset database, giữ cấu hình; tạo b
 - Nếu có **shop lists tùy chỉnh**, sau bản v0.4.5 bật lại `CustomBuyListLoad=True` trong `General.ini`; mặc định mới False.
 - Cần kiểm tra CustomBuyListLoad, Rates.ini, module.ini và phần NPC Việt hóa khi cập nhật; [changelog đầy đủ](RELEASE-LIVING-WORLDS-0.4.5.md).
 
+## Hotfix v0.4.7-patch cho người bắt đầu từ cấp 1 [UPSTREAM]
+- Human Talking Island và Dark Elf chuyển bãi săn từ **lv9**; Orc/Dwarf từ **lv10**, Elf từ **lv11** khi quái tân thủ quá yếu. Bot lv5+ ở bãi đông chuyển ra đồng thay vì đồng loạt tìm Party.
+- Living Bot Party được giới hạn 3 thành viên dưới lv20; 5 ở lv20–39; 7 ở lv40–51; 9 từ lv52; Party dư người tách bot level cao nhất trước. Chưa có xác nhận người chơi cũng bị giới hạn y hệt trong mọi chế độ.
+- Living Bots đã vào Party theo người chơi đến tận Elven Ruins bên trong bằng Gatekeeper; v0.4.7 vá pathfinding sai tầng và monster spawn phía trên Elven Ruins/Elven Fortress.
+- **Chưa xác nhận** toàn bộ bots bắt đầu level 1 hay lên cấp đồng tốc với người chơi; nên benchmark phân bố bot và Party vẫn cần thiết. [Changelog hotfix](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
+
 ## Kế hoạch an toàn
 
 ### A. Chuẩn bị
