@@ -2,7 +2,7 @@
 
 > Kho tài liệu tiếng Việt để **theo dõi Living Worlds**, bảo vệ dự án **Việt hóa Lineage II**, thử nghiệm AI bot và chuẩn bị cho việc phát triển tiếp bằng GitHub/Codex.
 >
-> **Cập nhật tài liệu:** 2026-11-14. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
+> **Cập nhật tài liệu:** 2026-11-15. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
 
 ## Bản chia sẻ hiện tại
 - **1.0:** bản đầy đủ đã chia sẻ, nền Living Worlds v0.4.5; giữ nguyên làm mốc.
@@ -15,10 +15,11 @@
 
 | Tài liệu | Nội dung |
 |---|---|
+| [Hotfix Living Worlds v0.4.7-patch](docs/RELEASE-LIVING-WORLDS-0.4.7-PATCH.md) | Bot theo Party vào Elven Ruins, sửa sai tầng dungeon, bot rời bãi newbie, giới hạn Party theo cấp |
 | [Living Worlds v0.4.5](docs/RELEASE-LIVING-WORLDS-0.4.5.md) | Castle tax/manor, Clan Hall auctions/sieges, Noblesse/Olympiad/Hero, dyes/augments, Rates/shops |
 | [Living Worlds v0.4.4](docs/RELEASE-LIVING-WORLDS-0.4.4.md) | Seven Signs/Festival, ~50 bãi săn, pet/mount, party matching, cửa hàng bot, grand bosses, sửa memory |
 | [Hotfix v0.4.3](docs/RELEASE-LIVING-WORLDS-0.4.3.md) | Sửa bot nhận lời Party, healer cast chậm, quest kẹt, world saves và reset living clan |
-| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.6 từ những changelog đã thu thập |
+| [Lịch sử cập nhật](docs/UPSTREAM-TIMELINE.md) | Tổng hợp bản phát hành Living Worlds v0.2.2 → v0.4.7-patch từ những changelog đã thu thập |
 | [Bản đồ hệ thống](docs/FEATURE-MAP.md) | Living Population, Phantom, .alt, Clan, kinh tế, ký ức, Cold Sim, AI Brain |
 | [Kế hoạch khởi tạo thế giới](docs/FRESH-WORLD-PLAN.md) | Chơi lại từ level 1 và cùng phát triển với bot; những gì đã có và chưa được xác nhận |
 | [Client & Việt hóa](docs/CLIENTS-AND-VIET-HOA.md) | Interlude 737/746, Fermata, Archive client, nguy cơ đối với bản dịch |
@@ -41,8 +42,9 @@
 
 | Hạng mục | Trạng thái ghi nhận |
 |---|---|
-| Living Worlds | **v0.4.6**: [UPSTREAM] raid allies/raid formations/memory fix; [OBSERVED] bản gốc và demo Việt hóa đã khởi động thành công, đủ 6 module. Chưa test raid thực tế/soak nhiều giờ. |
+| Living Worlds | **v0.4.7-patch [UPSTREAM]** đã nhận changelog, **chưa có build Việt hóa hoặc gameplay test**; **v0.4.6 [OBSERVED]**: [UPSTREAM] raid allies/raid formations/memory fix; [OBSERVED] bản gốc và demo Việt hóa đã khởi động thành công, đủ 6 module. Chưa test raid thực tế/soak nhiều giờ. |
 | Living Population | Công bố mặc định **500 bot** ở v0.4.2, tạo theo đợt ~3 giờ |
+| v0.4.7-patch | Bot theo người chơi vào Elven Ruins, sửa dungeon z/floor; bot rời bãi newbie sớm, Party bot 3/5/7/9 theo level; upstream patch ghi đè **5 config** |
 | v0.4.5 mở rộng | Bot Clan quản trị Castle/Clan Hall, Noblesse và Olympiad/Hero, sử dụng dyes/augments; patch thay **module.ini, General.ini, Rates.ini**; `CustomBuyListLoad=False` mặc định |
 | v0.4.4 mở rộng | Bot có Party Matching, Seven Signs, Festival, stores thật, pets/mounts và Grand Boss (**on mặc định**); patch thay **Feature.ini + living-population module.ini** |
 | Party & Quest v0.4.3 | Bot đồng ý Party sẽ gửi lời mời/đến thật, chữa quest chuyển nghề kẹt; Trade Chat Town Bot bật mặc định trở lại |
