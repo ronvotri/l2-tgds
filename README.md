@@ -16,6 +16,7 @@
 
 | Tài liệu | Nội dung |
 |---|---|
+| [Combat & Interlude rules — chưa xác định version](docs/RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md) | Magic Crit ×4, EXP/Party/Raid loot, Clan C5, Seal of Strife, 60+ bugfix Mobius; **chưa có số phiên bản** |
 | [Hotfix Living Worlds v0.4.7-patch](docs/RELEASE-LIVING-WORLDS-0.4.7-PATCH.md) | Bot theo Party vào Elven Ruins, sửa sai tầng dungeon, bot rời bãi newbie, giới hạn Party theo cấp |
 | [Living Worlds v0.4.5](docs/RELEASE-LIVING-WORLDS-0.4.5.md) | Castle tax/manor, Clan Hall auctions/sieges, Noblesse/Olympiad/Hero, dyes/augments, Rates/shops |
 | [Living Worlds v0.4.4](docs/RELEASE-LIVING-WORLDS-0.4.4.md) | Seven Signs/Festival, ~50 bãi săn, pet/mount, party matching, cửa hàng bot, grand bosses, sửa memory |
@@ -70,6 +71,7 @@
 | P1 | Kiểm chứng v0.4.4: Seven Signs, Party Matching, bot stores, Grand Boss, memory | [#7](https://github.com/ronvotri/l2-tgds/issues/7) |
 | P1 | Kiểm chứng v0.4.5: Castle, Clan Hall, Olympiad, Manor, Rates & CustomBuyList | [#8](https://github.com/ronvotri/l2-tgds/issues/8) |
 | P1 | v0.4.7-patch: dungeon, newbie, Party caps, chuẩn bị patch Việt hóa cộng dồn | [#10](https://github.com/ronvotri/l2-tgds/issues/10) |
+| P1 | **Chưa có số version**: combat Interlude/EXP/drop, Mobius fixes và Player.ini | [#12](https://github.com/ronvotri/l2-tgds/issues/12) |
 
 **Cho Codex và các phiên làm việc sau:** đọc [AGENTS.md](AGENTS.md) và [HANDOFF.md](HANDOFF.md) trước khi sửa bất cứ thứ gì. Có sẵn mẫu Issue cho [changelog](.github/ISSUE_TEMPLATE/release-research.md) và [QA/bug](.github/ISSUE_TEMPLATE/test-report.md).
 
