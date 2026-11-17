@@ -2,6 +2,9 @@
 
 > Checklist dành cho **bản server cá nhân đã Việt hóa**. Không thay thế hướng dẫn cụ thể của launcher/phát hành đúng version. Đã có kiểm kê và lượt cập nhật cục bộ 1.0.1 ngày 2026-11-14; xem [báo cáo](RELEASE-SHARE-1.0.1.md).
 
+## Lưu ý trích changelog Combat & Rules 2026-11-17 — chưa có số phiên bản
+Đã ghi nhận thay đổi Magic Crit ×4, Interlude EXP/Party/Raid drops, `DropGroupIndependentRolls`, Clan C5, 60+ Mobius fixes, `Player.ini` thêm `CraftingInCombat` và `DisableCp` đều off mặc định. **Chưa biết version/gói patch và file sẽ bị ghi đè, nên chưa thể làm thao tác update**. Đợi đối chiếu đúng release/payload, backup và test staging; giữ nguyên full 1.0 + patch cộng dồn 1.0.2 hiện tại. [Chi tiết](RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md).
+
 ## Bản chia sẻ Việt hóa
 Bản đầy đủ **1.0** là mốc bất biến. **Chỉ cài patch cộng dồn mới nhất**, không cài lần lượt các patch trung gian. Đã có **1.0.2 cho Living Worlds v0.4.7**, gồm sửa của 1.0.1; nâng trực tiếp từ 1.0 hoặc 1.0.1. Giữ mọi patch và checksum đã phát hành; quy trình xây patch kế tiếp tại [SHARE-RELEASES](SHARE-RELEASES.md). Dùng installer Việt hóa cho bản chia sẻ, không dùng updater upstream ghi đè.
 
