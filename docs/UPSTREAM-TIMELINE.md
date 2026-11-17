@@ -42,6 +42,10 @@
 
 [UPSTREAM] Bot Party theo player vào Elven Ruins và trả phí Gatekeeper; sửa bot/quái đứng trên vùng đất/đáy biển phía trên Elven Fortress và Elven Ruins, tránh đuổi quái khác tầng. Bot newbie rời khu khi quái quá yếu: Human Talking Island & Dark Elf **lv9**, Orc & Dwarf **lv10**, Elf **lv11**; từ lv5 bãi đông chuyển sang fields. Party Living Bot giới hạn **3 (<20), 5 (20+), 7 (40+), 9 (52+)**; loại thành viên cấp cao nhất nếu nhóm quá đông. Patch thay **living-population module.ini, General.ini, Rates.ini, Feature.ini, test-gear module.ini**; nếu cũ hơn v0.4.4 dùng **Full**. Chưa có [OBSERVED] gameplay; [chi tiết](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
+## Bản tin Combat & Rules chưa xác định phiên bản — trích 2026-11-17
+
+**[UPSTREAM / VERSION UNKNOWN]** Đã nhận hai mục “Combat and rules (closer to retail Interlude)” và “Base game fixes”: Magic Crit ×4/PvP, Interlude EXP/Party bonus/Raid drop rules, `DropGroupIndependentRolls` on, Clan C5, Seal of Strife chỉ trong Validation, 60+ Mobius fixes, hai công tắc mới `CraftingInCombat` và `DisableCp` (off). **Không có số phiên bản hoặc link release trong trích đoạn**, nên **không đặt dòng v0.4.8** hoặc khẳng định đã có trong 1.0.2. [Tài liệu/QA](RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md).
+
 ## Cụ thể đáng lưu ý
 
 ### Bot xã hội v0.4.2
