@@ -23,6 +23,12 @@ Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì sm
 
 **Chi tiết [UPSTREAM] và kịch bản test:** [Living Worlds v0.4.7-patch](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
+## Ghi nhận 2026-11-17 — Combat/Rules chưa xác định phiên bản
+- [ ] **P0-NEW** Xác minh release/version và package, các file patch thay, chưa gộp vào 1.0.2 nếu chưa có source/bản cài.
+- [ ] **P1-NEW** Magic Crit ×4 PvP/PvE, Interlude EXP/Party bonus/Raid drop & independent rolls, shield/polearm 0–360, WIT resurrect, Karma/death, Clan C5/Seal of Strife.
+- [ ] **P1-NEW** Clan Hall auction/rent, Olympiad manager, Festival, 60+ Mobius bugfix, Dark Elf dialogues/tutorial, `Player.ini` defaults `CraftingInCombat=False`, `DisableCp=False`.
+[Tài liệu và bài test chi tiết](RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md) · [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). **Trạng thái: NOT RUN**.
+
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.
