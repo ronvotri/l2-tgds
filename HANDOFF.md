@@ -1,6 +1,9 @@
 # HANDOFF — L2-TGDS / Living Worlds
 Cập nhật: **2026-11-15**. Đọc [AGENTS.md](AGENTS.md) trước khi làm tiếp.
 
+## Ghi nhận mới 2026-11-17 [UPSTREAM / VERSION UNKNOWN]
+Người dùng gửi **trích changelog không có số phiên bản** về Combat & Rules sát Interlude: Magic Crit ×4 (cả PvP), level-gap EXP/Party bonus/raid drops, `DropGroupIndependentRolls` on, Clan C5/Seal of Strife, 60+ L2J Mobius base fixes, `Player.ini` có `CraftingInCombat` và `DisableCp` (đều off mặc định). **Chỉ ghi nghiên cứu, chưa cập nhật build/install/patch, chưa có QA.** [Tài liệu](docs/RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md) · [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). **Mốc build vẫn là 1.0.2 / Living Worlds v0.4.7**, không tự gán thành v0.4.8.
+
 ## Cập nhật vừa triển khai
 **1.0.2 / Living Worlds v0.4.7** đã build/cài trên bản gốc và demo, giữ Việt hóa. [Báo cáo](docs/RELEASE-SHARE-1.0.2.md). Gameplay dungeon trong [changelog](docs/RELEASE-LIVING-WORLDS-0.4.7-PATCH.md) vẫn cần test.
 
