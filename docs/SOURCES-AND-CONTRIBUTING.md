@@ -18,6 +18,8 @@
 
 9. **Living Worlds v0.4.7-patch**: thông báo hotfix do người dùng gửi trong cuộc trò chuyện ngày **2026-11-15**; [nội dung và QA](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md). Lượt nghiên cứu đầu chỉ có changelog [UPSTREAM]. Sau đó đã tải [ZIP chính thức](https://updates.l2livingworlds.space/releases/v0.4.7-patch/L2J-Offline-Patch.zip), đối chiếu và build Việt hóa **1.0.2**; [báo cáo smoke/installer](RELEASE-SHARE-1.0.2.md). Gameplay dungeon chưa test.
 
+10. **Combat and rules / Base game fixes (chưa xác định release)**: hai mục changelog do người dùng cung cấp ngày **2026-11-17**, không có tiêu đề phiên bản, URL release hoặc file patch. [Tài liệu nghiên cứu](RESEARCH-RETAIL-INTERLUDE-COMBAT-UNVERSIONED.md) và [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). [UPSTREAM / VERSION UNKNOWN] **không được coi như v0.4.8 hoặc đã cài trên 1.0.2**.
+
 ## Nhãn độ tin cậy
 
 - **[UPSTREAM]** Nhà phát triển đã công bố trong đoạn changelog. Chưa có QA độc lập.
