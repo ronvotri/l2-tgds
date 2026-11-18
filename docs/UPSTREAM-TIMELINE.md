@@ -1,4 +1,4 @@
-# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-17)
+# Niên biểu cập nhật Living Worlds (tổng hợp đến 2026-11-18)
 
 > **[UPSTREAM]** Các mục dưới đây dựa trên changelog/thông báo cộng đồng được người dùng chép vào cuộc trò chuyện. Các mục lịch sử không mặc nhiên là bản đã cài. Riêng v0.4.6 đã có [smoke test Việt hóa 1.0.1](RELEASE-SHARE-1.0.1.md). Không tự lấp các phiên bản thiếu bằng suy đoán. Mốc thời gian là ngày bài đăng khi có trong nội dung; một số mốc không có ngày chính xác.
 
@@ -45,6 +45,14 @@
 ## Living Worlds v0.4.9 — Combat & Rules (trích ngày 2026-11-17)
 
 **[UPSTREAM v0.4.9 — người dùng xác nhận phiên bản]** Đã nhận hai mục “Combat and rules (closer to retail Interlude)” và “Base game fixes”: Magic Crit ×4/PvP, Interlude EXP/Party bonus/Raid drop rules, `DropGroupIndependentRolls` on, Clan C5, Seal of Strife chỉ trong Validation, 60+ Mobius fixes, hai công tắc mới `CraftingInCombat` và `DisableCp` (off). **Phiên bản được người dùng xác nhận là v0.4.9**, nhưng chưa kiểm tra gói patch/link release đầy đủ; **không khẳng định đã có trong bản Việt hóa 1.0.2**. [Tài liệu/QA](RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md).
+
+## Living Worlds v0.4.10 — trích thông báo 2026-11-18 [UPSTREAM]
+
+- **Community Board**: các dịch vụ Buffer, Merchant, Gatekeeper, Delevel, Premium tắt thì ẩn nút; thêm hide list cho button name, gồm module tabs, trong Control Panel → Community Board.
+- **Clans**: `Player.ini` có `DaysBeforeAcceptNewMemberWhenDismissed` (0 tắt chờ; default giữ luật cũ, chưa rõ số ngày).
+- **Launcher**: Modules panel chia own modules và core modules; cần `LivingWorld.exe` mới từ release page.
+- **Patch**: giữ setting đã chỉnh và backup config ở `config-backup\\before-v0.4.10\\`; cập nhật `FakePlayers.ini`, `PhantomOlympiad.ini`, `CommunityBoard.ini`, `Player.ini`, `living-population/clans.ini`. Setting `FakePlayerBaseNpcId`/Olympiad roster size chưa từng sửa nhận default mới. Máy quá cũ dùng Full.
+- **Đây chỉ là trích 4 mục**, chưa phải toàn bộ changelog; **chưa tích hợp** vào patch Việt hóa 1.0.2 (LW v0.4.7). [Phân tích/QA](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md).
 
 ## Cụ thể đáng lưu ý
 
