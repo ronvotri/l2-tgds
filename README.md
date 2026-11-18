@@ -2,7 +2,7 @@
 
 > Kho tài liệu tiếng Việt để **theo dõi Living Worlds**, bảo vệ dự án **Việt hóa Lineage II**, thử nghiệm AI bot và chuẩn bị cho việc phát triển tiếp bằng GitHub/Codex.
 >
-> **Cập nhật tài liệu:** 2026-11-17. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
+> **Cập nhật tài liệu:** 2026-11-18. **Đây không phải source code chính thức của Living Worlds**, cũng không chứa client game, bản quyền tài nguyên, database hay bản sao save.
 
 ## Bản chia sẻ hiện tại
 - **1.0:** bản đầy đủ đã chia sẻ, nền Living Worlds v0.4.5; giữ nguyên làm mốc.
@@ -16,6 +16,7 @@
 
 | Tài liệu | Nội dung |
 |---|---|
+| [Living Worlds v0.4.10 — trích changelog](docs/RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md) | Community Board ẩn nút, Clan cooldown, launcher Modules chia nhóm, patch tự backup và giữ config |
 | [Living Worlds v0.4.9 — Combat & Interlude rules](docs/RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md) | Magic Crit ×4, EXP/Party/Raid loot, Clan C5, Seal of Strife, 60+ bugfix Mobius; **v0.4.9 theo xác nhận người dùng, chưa tích hợp vào patch 1.0.2** |
 | [Hotfix Living Worlds v0.4.7-patch](docs/RELEASE-LIVING-WORLDS-0.4.7-PATCH.md) | Bot theo Party vào Elven Ruins, sửa sai tầng dungeon, bot rời bãi newbie, giới hạn Party theo cấp |
 | [Living Worlds v0.4.5](docs/RELEASE-LIVING-WORLDS-0.4.5.md) | Castle tax/manor, Clan Hall auctions/sieges, Noblesse/Olympiad/Hero, dyes/augments, Rates/shops |
@@ -72,6 +73,7 @@
 | P1 | Kiểm chứng v0.4.5: Castle, Clan Hall, Olympiad, Manor, Rates & CustomBuyList | [#8](https://github.com/ronvotri/l2-tgds/issues/8) |
 | P1 | v0.4.7-patch: dungeon, newbie, Party caps, chuẩn bị patch Việt hóa cộng dồn | [#10](https://github.com/ronvotri/l2-tgds/issues/10) |
 | P1 | **v0.4.9**: combat Interlude/EXP/drop, Mobius fixes và Player.ini | [#12](https://github.com/ronvotri/l2-tgds/issues/12) |
+| P0/P1 | **v0.4.10**: kiểm tra config backup/merge, UI Community Board, launcher mới | [#13](https://github.com/ronvotri/l2-tgds/issues/13) |
 
 **Cho Codex và các phiên làm việc sau:** đọc [AGENTS.md](AGENTS.md) và [HANDOFF.md](HANDOFF.md) trước khi sửa bất cứ thứ gì. Có sẵn mẫu Issue cho [changelog](.github/ISSUE_TEMPLATE/release-research.md) và [QA/bug](.github/ISSUE_TEMPLATE/test-report.md).
 
