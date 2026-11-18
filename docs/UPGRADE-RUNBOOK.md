@@ -2,6 +2,11 @@
 
 > Checklist dành cho **bản server cá nhân đã Việt hóa**. Không thay thế hướng dẫn cụ thể của launcher/phát hành đúng version. Đã có kiểm kê và lượt cập nhật cục bộ 1.0.1 ngày 2026-11-14; xem [báo cáo](RELEASE-SHARE-1.0.1.md).
 
+## Lưu ý updater Living Worlds v0.4.10 — trích changelog
+**[UPSTREAM · NOT RUN]** Patch v0.4.10 được công bố **bảo toàn setting đã chỉnh và backup config tự động** vào `config-backup\\before-v0.4.10\\`; 5 file trong đợt cập nhật: `FakePlayers.ini`, `PhantomOlympiad.ini`, `CommunityBoard.ini`, `Player.ini`, `living-population/clans.ini`. `FakePlayerBaseNpcId` và Olympiad roster size chưa tùy chỉnh sẽ nhận **default mới**. Để có Modules panel chia module tự thêm/core cần tải `LivingWorld.exe` mới từ release page. Nếu cài rất cũ, tác giả yêu cầu Full.
+
+**Quan trọng:** Đây là cơ chế được công bố nhưng **chưa có kiểm thử file thực**. Vẫn phải backup **server, DB/save, client Việt hóa, AI/runtime**, đối chiếu backup được tạo, test user-modified vs untouched config và rollback. **Không coi thư mục config-backup là bản sao world**. Đừng tự gộp v0.4.10 vào patch Việt hóa 1.0.2 đã phát hành. [Tài liệu v0.4.10](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md) · [Issue #13](https://github.com/ronvotri/l2-tgds/issues/13).
+
 ## Lưu ý Living Worlds v0.4.9 Combat & Rules — trích 2026-11-17
 Đã ghi nhận thay đổi Magic Crit ×4, Interlude EXP/Party/Raid drops, `DropGroupIndependentRolls`, Clan C5, 60+ Mobius fixes, `Player.ini` thêm `CraftingInCombat` và `DisableCp` đều off mặc định. **Đã xác định là changelog v0.4.9 theo người dùng; chưa kiểm tra gói patch, file bị ghi đè và cách nâng cấp, nên chưa thể làm thao tác update**. Đợi đối chiếu đúng release/payload, backup và test staging; giữ nguyên full 1.0 + patch cộng dồn 1.0.2 hiện tại. [Chi tiết](RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md).
 
