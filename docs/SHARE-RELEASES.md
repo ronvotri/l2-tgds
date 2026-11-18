@@ -1,6 +1,9 @@
 # Bản chia sẻ và patch cộng dồn
 Quy ước do chủ dự án xác nhận ngày **2026-11-14**.
 
+## Nghiên cứu upstream mới chưa tích hợp (2026-11-18)
+Đã nhận đoạn changelog v0.4.10 về Community Board, Clans, Launcher và cơ chế updater **tự backup config đã chỉnh, giữ setting tùy chỉnh**. Đây chỉ là **[UPSTREAM]**, chưa build/cài patch Việt hóa mới. Bản phát hành vẫn **1.0 + patch cộng dồn 1.0.2 / LW v0.4.7**. Khi làm patch kế tiếp phải kiểm tra full gói v0.4.10 và bảo vệ save/bản dịch; không phụ thuộc hoàn toàn backup config của upstream. [Nghiên cứu](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md).
+
 ## Ba số phiên bản khác nhau
 | Dòng | Hiện tại | Ý nghĩa |
 |---|---|---|
