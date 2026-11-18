@@ -20,6 +20,8 @@
 
 10. **Living Worlds v0.4.9 — Combat and rules / Base game fixes**: hai mục changelog do người dùng cung cấp ngày **2026-11-17**, người dùng xác nhận những trích đoạn này thuộc **v0.4.9**; đoạn trích không có URL release hoặc file patch. [Tài liệu nghiên cứu](RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md) và [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). [UPSTREAM v0.4.9 — user confirmed] **chưa xác minh package hay cài lên bản Việt hóa 1.0.2**.
 
+11. **Living Worlds v0.4.10 (trích 4 mục)**: đoạn **Community Board / Clans / Launcher / Updating** được người dùng gửi ngày **2026-11-18**. Chỉ có văn bản trích, chưa có URL bản phát hành/ZIP/EXE/changelog đầy đủ. [Tài liệu](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md) · [QA #13](https://github.com/ronvotri/l2-tgds/issues/13). [UPSTREAM · NOT RUN], không tự coi đã lên bản Việt hóa 1.0.2.
+
 ## Nhãn độ tin cậy
 
 - **[UPSTREAM]** Nhà phát triển đã công bố trong đoạn changelog. Chưa có QA độc lập.
