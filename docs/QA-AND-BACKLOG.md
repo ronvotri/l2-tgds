@@ -29,6 +29,18 @@ Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì sm
 - [ ] **P1-NEW** Clan Hall auction/rent, Olympiad manager, Festival, 60+ Mobius bugfix, Dark Elf dialogues/tutorial, `Player.ini` defaults `CraftingInCombat=False`, `DisableCp=False`.
 [Tài liệu và bài test chi tiết](RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md) · [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). **Trạng thái: NOT RUN cho v0.4.9**.
 
+## V0.4.10 — Config preservation & Community Board (UPSTREAM / NOT RUN)
+- [ ] **P0-0410-1** Xác minh patch/Full và `LivingWorld.exe` v0.4.10 chính thức; checksum trước khi dùng.
+- [ ] **P0-0410-2** Backup server, SQL/save, client Việt hóa, AI/runtime riêng (config-backup chỉ chứa config đã đổi, không thay thế bản sao world).
+- [ ] **P0-0410-3** Với 5 file: `FakePlayers.ini`, `PhantomOlympiad.ini`, `CommunityBoard.ini`, `Player.ini`, `living-population/clans.ini`, test sao lưu trong `config-backup\\before-v0.4.10\\` và merge các giá trị riêng.
+- [ ] **P0-0410-4** Test giá trị `FakePlayerBaseNpcId` và Olympiad roster size đã chỉnh/không chỉnh; chưa chỉnh nhận default mới.
+- [ ] **P0-0410-5** Tích hợp patch cộng dồn tương lai phải test từ 1.0 sạch và từ 1.0.2, cài lặp, rollback; **không coi README update là build đã xong**.
+- [ ] **P1-0410-1** Community Board: tự ẩn button của Buffer/Merchant/Gatekeeper/Delevel/Premium khi dịch vụ tắt; hide list các button name + module tabs; không lỗi Việt hóa.
+- [ ] **P1-0410-2** `DaysBeforeAcceptNewMemberWhenDismissed`: 0 bỏ chờ, default giữ luật cũ; test sau dismiss và restart.
+- [ ] **P1-0410-3** Launcher mới chia core/custom modules; giữ chức năng one-click và runtime.
+
+[Changelog v0.4.10 trích](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md) · [Issue #13](https://github.com/ronvotri/l2-tgds/issues/13).
+
 ## P0 — An toàn bản Việt hóa và tiến trình
 - [ ] **P0-01** Kiểm kê bản server hiện cài, module, client protocol, tên và vị trí các file Việt hóa; lập checksum manifest.
 - [ ] **P0-02** Backup có thể restore: server đầy đủ, DB, client Việt hóa, bản cấu hình tùy chỉnh, module, dữ liệu game không công khai.
