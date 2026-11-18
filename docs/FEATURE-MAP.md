@@ -74,6 +74,12 @@ Tài liệu đầy đủ: [v0.4.5](RELEASE-LIVING-WORLDS-0.4.5.md).
 - Living Bot Party có giới hạn thành viên theo level: **3 (<20), 5 (20–39), 7 (40–51), 9 (52+)**; nếu vượt giới hạn thì thành viên **cao level nhất rời trước**. Chưa chắc chắn quy tắc tương tự áp dụng cho Party player-only.
 - Cần test staging và kiểm tra bản Việt hóa; [chi tiết](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
+## Cấu hình UI, Clan và Launcher v0.4.10 [UPSTREAM · PARTIAL]
+- **Community Board**: Tự ẩn nút của các dịch vụ tắt (Buffer/Merchant/Gatekeeper/Delevel/Premium); thêm hide list cho tên nút, bao gồm tab module; chỉnh trong Control Panel → Community Board. Chưa biết tên option `.ini` chính xác.
+- **Clan cooldown**: `DaysBeforeAcceptNewMemberWhenDismissed` trong `Player.ini` tính số ngày phải đợi sau khi dismiss thành viên trước khi nhận người mới; `0` tắt chờ, default giữ luật cũ (không rõ số ngày).
+- **Launcher**: Modules panel chia core modules và modules người dùng; cần `LivingWorld.exe` mới từ release page.
+- **Update config**: patch công bố backup các file cấu hình đã chỉnh vào `config-backup\\before-v0.4.10\\` và bảo toàn giá trị tùy chỉnh. **Chưa QA; backup config không thay thế bản sao server/DB.** [Chi tiết và checklist](RELEASE-LIVING-WORLDS-0.4.10-PARTIAL.md).
+
 ## Các giả thuyết cần kiểm chứng trên một world mới
 
 - [UNKNOWN] Có thể bắt đầu **toàn bộ** living bots tại level 1 cùng nhân vật mới hay không?
