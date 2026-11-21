@@ -1,5 +1,2 @@
-🎮 L2 Việt hóa 1.0.33 — Living Worlds 0.4.10
-• Đội Living bot ổn định hơn, sửa bot thiếu shots/vũ khí và buff boss gây Raid Curse.
-• Bot giữ quà tặng, thuộc tính cường hóa/tinh luyện của trang bị; giảm tải bot trong thành.
-• Thêm tùy chỉnh ẩn nút Alt+B, chỉ tuyển Phantom trong thành và Việt hóa nội dung mới.
-Giữ save, AI, nhặt hộ, sửa Xenos và công cụ GM. Có bản 1.0–1.0.32 chỉ cài patch 1.0.33, không cần tải lại game/AI hoặc cài từng patch.
+🎮 Bổ sung patch 1.0.33: sửa lỗi bấm “Lưu và tắt” làm hiện hàng loạt hộp báo lỗi Config. Không đổi phần lưu dữ liệu server; giữ save, AI và cấu hình riêng.
+Ai đang dùng 1.0.32 hoặc đã tải 1.0.33 trước đó hãy tải gói 1.0.33 mới nhất, cài rồi đóng/mở lại bảng điều khiển. Không cần tải lại game hoặc cài từng patch.

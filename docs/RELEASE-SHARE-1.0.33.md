@@ -32,3 +32,10 @@ Nguồn chính thức: [release feed](https://updates.l2livingworlds.space/relea
 Giải nén patch cạnh CHOI-NGAY.bat + Du-lieu, chạy CAP-NHAT-1.0.33.bat, chờ thành công rồi mở game. Installer dùng Stop.ps1 lưu/dừng trước khi sao lưu tệp; kiểm tra hash và không downgrade. Giữ account/database/AI memories/config riêng. Backup main trước 0.4.10 và backup mỗi lần demo cài được giữ cục bộ. Chỉ rollback file kèm backup tương ứng, không reset database đang có tiến trình.
 
 ZIP/binary/save/model không đưa GitHub; [metadata/checksum](../releases/1.0.33.json), [thông báo](../announcements/1.0.33.txt). Repo chứa docs, metadata và công cụ bảo trì tự viết.
+
+## UI hotfix — Lưu và tắt không bật lặp lỗi Config
+[OBSERVED 2026-11-21] Bộ theo dõi Start-L2UiScript gọi MessageBox.Show trước khi Stop/Dispose Timer. MessageBox bơm vòng lặp Windows khiến cùng Tick tái nhập, liên tiếp bật popup; khi Stop.ps1 chủ động đóng Config cũng có thể bị coi là lỗi mở Config.
+
+Đã sửa riêng UiWindow.ps1: Done guard và Stop/Dispose trước popup, Stop hủy các monitor cũ, chặn click trùng đang chờ, lỗi shutdown thực vẫn báo một lần. Không đổi Stop.ps1/core hoặc database/save. Tái hiện 4 popup bằng WinForms Timer/message pump thật, notification/process stubbed; bản mới đúng một báo lỗi, shutdown Config chủ động không báo, success/timeout/click trùng đều qua. Không dừng server thật để test lại chỉ vì lỗi giao diện.
+
+Cùng số 1.0.33, revision shutdown-single-notice-20261121. ZIP cũ giữ lịch sử. Đã áp demo bằng thay một script và hash manifest có backup; đóng/mở lại bảng điều khiển để nạp script mới. Người dùng 1.0.32 hoặc 1.0.33 cũ tải lại patch cộng dồn mới nhất.

@@ -116,3 +116,5 @@ Người dùng gửi **hai phần changelog mà người dùng xác nhận thu�
 - Kiểm thử client 737/746/Fermata song song. Chưa thay client mặc định từ những trao đổi nghiên cứu.
 - Interlude+ v0.4.6 alpha là dự án/module khác, không phải Living Worlds v0.4.6.
 - Các checklist cũ chưa được kiểm thử vẫn giữ TODO; xem [QA](docs/QA-AND-BACKLOG.md). Không đóng các issue về gameplay chỉ vì server khởi động thành công.
+
+Latest 1.0.33 revision shutdown-single-notice-20261121: timer reentrant popup fix; cancel intentional Config close monitors when stopping. Server shutdown logic/save untouched. Timer/message pump regression tests passed.

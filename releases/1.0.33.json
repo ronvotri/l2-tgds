@@ -22,12 +22,14 @@
   "upstream_version": "v0.4.10",
   "published_date": "2026-11-21",
   "artifact": "L2-VietHoa-Patch-1.0-len-1.0.33.zip",
-  "bytes": 10535362,
-  "sha256": "766b29425e66d8379b8e2b6a7739b3cbb169abfa7ec2aaa33bffec6b486a9875",
+  "bytes": 10535857,
+  "sha256": "233276de24c94f2086fc4eefd1bfc21c1292eceb76bc9427144ef8a032d614cf",
   "baseline_sha256": "5d4618000ea00cc59d8ddd779a5905536e0e72b33805c576a624f5a6e624c2e5",
   "artifact_distribution": "separate-from-git",
   "source": "https://updates.l2livingworlds.space/releases.json",
   "native_loot_inventory_cases": 23,
   "scripts_compiled": 928,
-  "live_client_gameplay_tested": false
+  "live_client_gameplay_tested": false,
+  "revision": "shutdown-single-notice-20261121",
+  "shutdown_popup_reentrancy_tested": true
 }

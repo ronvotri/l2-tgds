@@ -1,4 +1,4 @@
-if(-not ('L2VisibleWindow' -as [type])){
+﻿if(-not ('L2VisibleWindow' -as [type])){
  Add-Type @"
 using System;using System.Runtime.InteropServices;
 public static class L2VisibleWindow {
@@ -51,22 +51,56 @@ function Show-L2UniqueWindow($Window,[string]$Root,[string]$Kind){
   $mutex.Dispose()
  }
 }
+# One operation per UI action. Stop/dispose before any modal dialog: Show() pumps
+# Windows messages and otherwise allows the same Tick to re-enter indefinitely.
+if(!$script:L2UiOperations){$script:L2UiOperations=@{}}
+function Show-L2UiFailure([string]$Message){
+ [void][Windows.Forms.MessageBox]::Show($Message,'L2 Việt hóa')
+}
+function Stop-L2UiMonitor($Operation){
+ if($Operation.Done){return}
+ $Operation.Done=$true
+ $Operation.Timer.Stop()
+ $Operation.Timer.Dispose()
+}
 function Start-L2UiScript([string]$Root,[string]$Name){
  try{
+  $key=$Root.ToLowerInvariant()+'|'+$Name
+  if($script:L2UiOperations.ContainsKey($key)){
+   $prior=$script:L2UiOperations[$key]
+   if(!$prior.Done){return}
+  }
+  if($Name -eq 'Stop'){
+   # Stop.ps1 intentionally closes the config/brain services. A monitor created
+   # moments earlier must not report those intentional exits as launch failures.
+   foreach($operation in @($script:L2UiOperations.Values)){Stop-L2UiMonitor $operation}
+  }
   $file=Join-Path $Root ('launcher\'+$Name+'.ps1')
   if(!(Test-Path -LiteralPath $file)){throw ('Không tìm thấy '+$file)}
   $logs=Join-Path $Root 'logs';[void][IO.Directory]::CreateDirectory($logs)
   $stamp=Get-Date -Format 'yyyyMMdd-HHmmss-ffff'
   $err=Join-Path $logs ('ui-'+$Name+'-'+$stamp+'-error.log');$out=Join-Path $logs ('ui-'+$Name+'-'+$stamp+'.log')
   $p=Start-Process powershell.exe -WindowStyle Hidden -ArgumentList ('-NoProfile -ExecutionPolicy Bypass -STA -File "'+$file+'"') -RedirectStandardError $err -RedirectStandardOutput $out -PassThru
-  $monitor=New-Object Windows.Forms.Timer;$monitor.Interval=500;$deadline=[DateTime]::UtcNow.AddSeconds(10)
+  $monitor=New-Object Windows.Forms.Timer;$monitor.Interval=500
+  $operation=@{Timer=$monitor;Process=$p;Deadline=[DateTime]::UtcNow.AddSeconds(10);Done=$false}
+  $script:L2UiOperations[$key]=$operation
   $monitor.Add_Tick({
-   $p.Refresh()
-   if($p.HasExited){
-    if($p.ExitCode -ne 0){$detail=Get-Content -LiteralPath $err -Raw -ErrorAction SilentlyContinue;[void][Windows.Forms.MessageBox]::Show(('Không mở được '+$Name+'. Xem '+$err+"`n"+$detail),'L2 Việt hóa')}
-    $monitor.Stop();$monitor.Dispose()
-   }elseif([DateTime]::UtcNow -ge $deadline){$monitor.Stop();$monitor.Dispose()}
+   if($operation.Done){return}
+   try{
+    $p.Refresh()
+    if($p.HasExited){
+     # Must happen before opening a MessageBox, not after closing it.
+     Stop-L2UiMonitor $operation
+     if($p.ExitCode -ne 0){
+      $detail=Get-Content -LiteralPath $err -Raw -ErrorAction SilentlyContinue
+      Show-L2UiFailure ('Không mở được '+$Name+'. Xem '+$err+"`n"+$detail)
+     }
+    }elseif([DateTime]::UtcNow -ge $operation.Deadline){Stop-L2UiMonitor $operation}
+   }catch{
+    Stop-L2UiMonitor $operation
+    Show-L2UiFailure ('Không theo dõi được '+$Name+': '+$_.Exception.Message)
+   }
   }.GetNewClosure())
   $monitor.Start()
- }catch{[void][Windows.Forms.MessageBox]::Show($_.Exception.Message,'Không mở được cửa sổ')}
+ }catch{Show-L2UiFailure $_.Exception.Message}
 }
