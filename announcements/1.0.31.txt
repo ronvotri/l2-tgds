@@ -1,0 +1,4 @@
+🎮 L2 Việt hóa 1.0.31
+• Sửa lỗi Xenos không mở mục chuyển chức, cùng lỗi hội thoại bang hội/liên minh khi dùng tiếng Việt.
+• Bổ sung hướng dẫn Dark Wizard và sửa liên kết nhiệm vụ. Không cần làm lại quest; giữ save, AI và tùy chọn bot nhặt hộ.
+Đã có 1.0–1.0.3 chỉ tải patch 1.0.31, giải nén cạnh CHOI-NGAY.bat rồi chạy CAP-NHAT-1.0.31.bat. Không cần cài từng patch.

@@ -1,0 +1,3 @@
+🎮 Bổ sung bản 1.0.3: sửa lỗi Xenos không mở mục chuyển chức khi dùng tiếng Việt; đồng thời sửa hội thoại bang hội/liên minh và liên kết nhiệm vụ.
+Giữ tùy chọn bot nhặt đồ cho người chơi và toàn bộ cập nhật trước. Không cần làm lại quest, giữ save và AI.
+Ai đã cài 1.0–1.0.3 tải lại patch 1.0.3 mới nhất, giải nén cạnh CHOI-NGAY.bat rồi chạy CAP-NHAT-1.0.3.bat. Sau đó mở lại server.

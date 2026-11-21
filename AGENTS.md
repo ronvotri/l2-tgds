@@ -1,5 +1,9 @@
 # AGENTS.md — Instructions for Codex / assistants
 
+## Latest verified release — 1.0.33 / Living Worlds v0.4.10
+[OBSERVED 2026-11-21] Main/demo installed, startup 6 modules clean, 928 scripts compile, native loot 23 cases, HTML fallback and config UI pass; cumulative installer 1.0–1.0.32 plus rollback tested. Preserve immutable baseline and previous patches. See [docs/RELEASE-SHARE-1.0.33.md](docs/RELEASE-SHARE-1.0.33.md). Live gameplay/soak not run; AI wiki not exhaustive.
+
+
 ## Mission
 Maintain this Vietnamese research-and-handoff repository about Lineage II Living Worlds, the owner's Vietnamese localization, AI bots, and client/mod compatibility. **Documentation-first** until actual server/client files and a safe test environment are provided.
 
@@ -42,3 +46,13 @@ User-visible artifact or commit; docs reflect actual changes; no lost translatio
 
 ## Latest verified checkpoint (2026-11-15)
 Patch **1.0.2 / Living Worlds v0.4.7** is cumulative from 1.0. Genuine 1.0 and 1.0.1 upgrade paths converge; installer/config/save/rollback and server/AI/module smoke tests passed. Live dungeon gameplay remains NOT RUN. Preserve frozen 1.0 and 1.0.1 artifacts. See `docs/RELEASE-SHARE-1.0.2.md`.
+
+## Latest local checkpoint — 1.0.3 / Living Worlds v0.4.9
+See `docs/RELEASE-SHARE-1.0.3.md`. Tested cumulative installs from 1.0/1.0.1/1.0.2, config three-way defaults and overrides, guarded obsolete teleporter removal, runtime/AI/UI smoke. Keep localized AI entry compatibility until a separate modular migration is implemented and tested. Loot behavior is documented in `docs/BOT-LOOT.md`; do not silently force Living Population loot to players.
+
+## Latest local checkpoint — 1.0.3
+Optional FakePlayerPartyLootToPlayers is installed and default OFF, superseding the earlier loot-only documentation when enabled. See docs/RELEASE-SHARE-1.0.3.md. Preserve native behavior when OFF and bot-only economy. GitHub publication remains pending authentication; never claim a local commit was pushed.
+
+Owner version correction 2026-11-19: Xenos HTML fix is release 1.0.31 (not 1.0.3); latest metadata and installer/demo retagged. See docs/RELEASE-SHARE-1.0.31.md. Preserve prior releases.
+
+[OBSERVED 2026-11-19] Latest share release 1.0.32 adds optional local GM settings tools + account/item guide. Default unchanged; activate explicitly then restart. Preserve save/config. See docs/RELEASE-SHARE-1.0.32.md and maintenance/gm-tools. Public push still pending authentication.

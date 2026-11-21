@@ -1,6 +1,6 @@
 # Living Worlds v0.4.9 — Combat & Rules sát retail Interlude và sửa lỗi nền game
 
-> **[UPSTREAM · VERSION CONFIRMED BY USER: v0.4.9]** Người dùng xác nhận ngày **2026-11-17** rằng hai phần changelog **"Combat and rules (closer to retail Interlude)"** và **"Base game fixes"** thuộc **Living Worlds v0.4.9**. Hiện đây là **hai phần trích**, chưa có bản phát hành/ZIP/changelog đầy đủ được kiểm tra trong repo. **Không đồng nghĩa** đã tích hợp vào bản Việt hóa **1.0.2 / Living Worlds v0.4.7**, và **chưa có kiểm thử gameplay [OBSERVED]**.
+> **[UPSTREAM · VERSION CONFIRMED BY USER: v0.4.9]** Người dùng xác nhận ngày **2026-11-17** rằng hai phần changelog **"Combat and rules (closer to retail Interlude)"** và **"Base game fixes"** thuộc **Living Worlds v0.4.9**. Lượt nghiên cứu ban đầu chỉ có hai phần trích. Sau đó đã tải ZIP/feed chính thức, build/cài Việt hóa **1.0.3**; [báo cáo](RELEASE-SHARE-1.0.3.md). 1.0.3 đã tích hợp v0.4.9 ở mức build/cài/smoke, và **chưa có kiểm thử gameplay [OBSERVED]**.
 
 ## 1. Combat and rules — bám luật Interlude
 

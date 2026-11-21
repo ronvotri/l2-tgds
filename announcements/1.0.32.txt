@@ -1,0 +1,1 @@
+🎮 Đã sửa lại patch 1.0.32: nút GM/bảng điều khiển nay mở cửa sổ đúng, không còn bị ẩn; bấm nhiều lần không mở trùng. Ai tải bản 1.0.32 trước đó tải lại gói mới nhất. Giữ save, AI và các tính năng GM/tạo tài khoản đã hướng dẫn.

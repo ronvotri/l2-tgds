@@ -1,0 +1,33 @@
+{
+  "release": "1.0.33",
+  "base_release": "1.0",
+  "cumulative": true,
+  "includes_releases": [
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31",
+    "1.0.32",
+    "1.0.33"
+  ],
+  "supported_upgrade_from": [
+    "1.0",
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31",
+    "1.0.32",
+    "1.0.33"
+  ],
+  "upstream_version": "v0.4.10",
+  "published_date": "2026-11-21",
+  "artifact": "L2-VietHoa-Patch-1.0-len-1.0.33.zip",
+  "bytes": 10535362,
+  "sha256": "766b29425e66d8379b8e2b6a7739b3cbb169abfa7ec2aaa33bffec6b486a9875",
+  "baseline_sha256": "5d4618000ea00cc59d8ddd779a5905536e0e72b33805c576a624f5a6e624c2e5",
+  "artifact_distribution": "separate-from-git",
+  "source": "https://updates.l2livingworlds.space/releases.json",
+  "native_loot_inventory_cases": 23,
+  "scripts_compiled": 928,
+  "live_client_gameplay_tested": false
+}

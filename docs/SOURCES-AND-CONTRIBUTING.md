@@ -57,3 +57,6 @@
 - [Feed chính thức](https://updates.l2livingworlds.space/releases.json) công bố Living Worlds v0.4.6 ngày 2026-11-14; [ZIP patch](https://updates.l2livingworlds.space/releases/v0.4.6-patch/L2J-Offline-Patch.zip) đã tải và đối chiếu với v0.4.5.
 - [OBSERVED] Việt hóa 1.0.1 đã build/cài và smoke test cục bộ. Repo công khai chỉ có [tóm tắt QA](RELEASE-SHARE-1.0.1.md), metadata/hash; không chứa game binaries, SQL, player memory hay log cá nhân.
 - Raid AI và memory fix trong changelog vẫn mang nhãn [UPSTREAM] cho đến khi test gameplay/soak tương ứng.
+
+## Kiểm chứng v0.4.9 và loot bot
+[Feed chính thức](https://updates.l2livingworlds.space/releases.json), [ZIP v0.4.9](https://updates.l2livingworlds.space/releases/v0.4.9-patch/L2J-Offline-Patch.zip) đã tải/diff. [Báo cáo 1.0.3](RELEASE-SHARE-1.0.3.md). Phân tích Party.isLootEligible và PhantomPartyCommands từ JAR v0.4.7/v0.4.9 xác nhận khác biệt Phantom/Living loot; chưa có test client nhận đồ trực tiếp.

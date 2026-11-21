@@ -1,0 +1,33 @@
+{
+  "release": "1.0.32",
+  "base_release": "1.0",
+  "cumulative": true,
+  "includes_releases": [
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31",
+    "1.0.32"
+  ],
+  "supported_upgrade_from": [
+    "1.0",
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31",
+    "1.0.32"
+  ],
+  "upstream_version": "v0.4.9",
+  "published_date": "2026-11-19",
+  "artifact": "L2-VietHoa-Patch-1.0-len-1.0.32.zip",
+  "bytes": 10415946,
+  "sha256": "69bf5b61f79c0a0adc04ec7498f2f7cc494401fcc3bcdaf22bf7b8c655167926",
+  "baseline_sha256": "5d4618000ea00cc59d8ddd779a5905536e0e72b33805c576a624f5a6e624c2e5",
+  "artifact_distribution": "separate-from-git",
+  "gm_activation": "opt-in; all characters in local server; restart required",
+  "installer_and_gm_settings_tested": true,
+  "interactive_gameplay_tested": false,
+  "revision": "visible-ui-hotfix-20261119",
+  "actual_hidden_child_visibility_tested": true,
+  "live_panel_and_gm_visibility_verified": true
+}

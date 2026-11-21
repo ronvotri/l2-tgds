@@ -1,8 +1,19 @@
 # QA & backlog triển khai
 
+## Latest verified release — 1.0.33 / Living Worlds v0.4.10
+[OBSERVED 2026-11-21] Main/demo installed, startup 6 modules clean, 928 scripts compile, native loot 23 cases, HTML fallback and config UI pass; cumulative installer 1.0–1.0.32 plus rollback tested. Preserve immutable baseline and previous patches. See [RELEASE-SHARE-1.0.33.md](RELEASE-SHARE-1.0.33.md). Live gameplay/soak not run; AI wiki not exhaustive.
+
+
+## Mới nhất — 1.0.3
+[OBSERVED 2026-11-18] Thêm công tắc nhặt hộ cho cả Phantom/Living; mặc định tắt. Native inventory 23 ca và UI bật/lưu đã qua, chưa chơi thử client. Installer 1.0–1.0.3/rollback đã qua. [Báo cáo](RELEASE-SHARE-1.0.3.md). Giữ bản đầy đủ 1.0 và mọi patch cũ.
+
+
 Quy ước: **P0** = bảo vệ dữ liệu / blocker, **P1** = bắt buộc trước khi đưa vào sử dụng nhiều máy, **P2** = tính năng mở rộng. Dấu checkbox là **chưa test trong repo**, không phải lỗi đã được xác minh.
 
-## Kiểm chứng mới nhất — 1.0.2 / Living Worlds v0.4.7
+## Kiểm chứng mới nhất — 1.0.3 / v0.4.9
+Đã build/cài, 928 scripts, khởi động server/AI, 6 trang quản lý có icon; test installer từ 1.0–1.0.2, config three-way/guarded teleporter removal/rollback, giữ inventory và 437 tệp save qua cài. [Báo cáo](RELEASE-SHARE-1.0.3.md). Chưa test combat/PK/loot trực tiếp hoặc soak.
+
+## Kiểm chứng trước — 1.0.2 / Living Worlds v0.4.7
 [OBSERVED 2026-11-15] Đã test nâng từ bộ tệp thật 1.0 và từ 1.0.1 cho cùng payload; giữ save/config/giới tính, cài lặp, chống downgrade/code drift và rollback. Bản gốc/demo khởi động đủ 6 module và AI, inventory không đổi; 437 tệp dữ liệu demo không đổi bởi bước cài. [Báo cáo](RELEASE-SHARE-1.0.2.md). Chưa chơi thử dungeon.
 
 ## Kiểm chứng trước — 1.0.1 / Living Worlds v0.4.6
@@ -24,7 +35,7 @@ Các mục TODO cũ bên dưới chưa được coi là hoàn tất chỉ vì sm
 **Chi tiết [UPSTREAM] và kịch bản test:** [Living Worlds v0.4.7-patch](RELEASE-LIVING-WORLDS-0.4.7-PATCH.md).
 
 ## Ghi nhận 2026-11-17 — Living Worlds v0.4.9 Combat/Rules
-- [ ] **P0-NEW** Xác minh gói release **v0.4.9** và package, các file patch thay, chưa gộp vào 1.0.2 nếu chưa có source/bản cài.
+- [x] **P0-NEW** [OBSERVED] Đã tải/diff/build/cài gói v0.4.9 thành 1.0.3; xem báo cáo.
 - [ ] **P1-NEW** Magic Crit ×4 PvP/PvE, Interlude EXP/Party bonus/Raid drop & independent rolls, shield/polearm 0–360, WIT resurrect, Karma/death, Clan C5/Seal of Strife.
 - [ ] **P1-NEW** Clan Hall auction/rent, Olympiad manager, Festival, 60+ Mobius bugfix, Dark Elf dialogues/tutorial, `Player.ini` defaults `CraftingInCombat=False`, `DisableCp=False`.
 [Tài liệu và bài test chi tiết](RELEASE-LIVING-WORLDS-0.4.9-COMBAT-RULES.md) · [Issue #12](https://github.com/ronvotri/l2-tgds/issues/12). **Trạng thái: NOT RUN cho v0.4.9**.

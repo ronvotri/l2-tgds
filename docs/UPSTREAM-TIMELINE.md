@@ -81,3 +81,6 @@
 
 ### Triển khai Việt hóa 1.0.2 — 2026-11-15 [OBSERVED]
 Đã tải/đối chiếu ZIP v0.4.7, dựng core Việt hóa, cài bản chính/demo và kiểm tra module/AI/installer. Gameplay dungeon vẫn NOT RUN. [Báo cáo](RELEASE-SHARE-1.0.2.md).
+
+## Việt hóa 1.0.3 / Living Worlds v0.4.9 — 2026-11-17
+[OBSERVED] Đã build/cài, smoke test server/AI/UI và ba đường installer từ 1.0–1.0.2. [Báo cáo](RELEASE-SHARE-1.0.3.md). Gameplay mới và soak vẫn NOT RUN.

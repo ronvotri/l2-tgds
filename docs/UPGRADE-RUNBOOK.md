@@ -112,3 +112,6 @@ Get-ChildItem "D:\LivingWorlds-Backup" -Recurse -File |
 
 ## Lưu ý liên quan Interlude+
 Bản alpha v0.4.6 có **installer backup file nó thay** nhưng không thay thế được backup server/database thủ công. Client pack **chỉ hướng đến Archive Client**; không cài thử trên server Việt hóa chính.
+
+## Việt hóa 1.0.3 / v0.4.9 đã triển khai
+[OBSERVED] Xử lý config-updates bằng merge ba chiều, không để startup áp lại; giữ override, nhận mặc định mới nếu chưa đổi. Chỉ backup/xóa teleporter others/30162.xml đúng hash, giữ bản ở IvoryTower. Giữ AI Việt compatibility entry và kiểm tra wiki/news; runtime bản chính đã sửa đường Python hỏng. [Báo cáo](RELEASE-SHARE-1.0.3.md).

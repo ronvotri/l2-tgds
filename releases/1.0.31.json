@@ -1,0 +1,32 @@
+{
+  "release": "1.0.31",
+  "base_release": "1.0",
+  "cumulative": true,
+  "includes_releases": [
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31"
+  ],
+  "supported_upgrade_from": [
+    "1.0",
+    "1.0.1",
+    "1.0.2",
+    "1.0.3",
+    "1.0.31"
+  ],
+  "upstream_version": "v0.4.9",
+  "published_date": "2026-11-19",
+  "artifact": "L2-VietHoa-Patch-1.0-len-1.0.31.zip",
+  "bytes": 10331976,
+  "sha256": "ce99f39f0282bef90fc274de6b194c766c3ccbb9bbf81334e4359d0015c5e9a5",
+  "baseline_sha256": "5d4618000ea00cc59d8ddd779a5905536e0e72b33805c576a624f5a6e624c2e5",
+  "artifact_distribution": "separate-from-git",
+  "native_inventory_cases": 23,
+  "live_client_gameplay_tested": false,
+  "config_ui_toggle_save_tested": true,
+  "revision": "xenos-html-fallback-20261119",
+  "html_fallback_native_tested": true,
+  "renumbered_from": "1.0.3 xenos fix",
+  "demo_upgrade_1_0_3_to_1_0_31_verified": true
+}

@@ -1,4 +1,12 @@
 # Bản chia sẻ và patch cộng dồn
+
+## Latest verified release — 1.0.33 / Living Worlds v0.4.10
+[OBSERVED 2026-11-21] Main/demo installed, startup 6 modules clean, 928 scripts compile, native loot 23 cases, HTML fallback and config UI pass; cumulative installer 1.0–1.0.32 plus rollback tested. Preserve immutable baseline and previous patches. See [RELEASE-SHARE-1.0.33.md](RELEASE-SHARE-1.0.33.md). Live gameplay/soak not run; AI wiki not exhaustive.
+
+
+## Mới nhất — 1.0.3
+[OBSERVED 2026-11-18] Thêm công tắc nhặt hộ cho cả Phantom/Living; mặc định tắt. Native inventory 23 ca và UI bật/lưu đã qua, chưa chơi thử client. Installer 1.0–1.0.3/rollback đã qua. [Báo cáo](RELEASE-SHARE-1.0.3.md). Giữ bản đầy đủ 1.0 và mọi patch cũ.
+
 Quy ước do chủ dự án xác nhận ngày **2026-11-14**.
 
 ## Nghiên cứu upstream mới chưa tích hợp (2026-11-18)
@@ -8,10 +16,10 @@ Quy ước do chủ dự án xác nhận ngày **2026-11-14**.
 | Dòng | Hiện tại | Ý nghĩa |
 |---|---|---|
 | Bản đầy đủ Việt hóa | 1.0 | Mốc ZIP cố định, nền Living Worlds v0.4.5 |
-| Patch Việt hóa | 1.0.2 | Patch cộng dồn từ 1.0, nền Living Worlds v0.4.7 |
-| Living Worlds | v0.4.7 | Phiên bản upstream; không phải Interlude+ alpha |
+| Patch Việt hóa | 1.0.3 | Patch cộng dồn từ 1.0, nền Living Worlds v0.4.9 |
+| Living Worlds | v0.4.9 | Phiên bản upstream; không phải Interlude+ alpha |
 
-**Người có 1.0 chỉ tải patch mới nhất.** Bản hiện tại 1.0.2 có đường đi `1.0 → 1.0.2`, hoặc `1.0.1 → 1.0.2` với cùng gói; không bắt cài 1.0.1 trước. Cả hai đường đã test cho cùng payload đích. Các bản sau tiếp tục cùng quy tắc.
+**Người có 1.0 chỉ tải patch mới nhất.** Bản hiện tại 1.0.3 có đường đi trực tiếp từ 1.0, 1.0.1 hoặc 1.0.2 với cùng gói; không bắt cài 1.0.1 trước. Cả ba đường đã test cho cùng payload đích. Các bản sau tiếp tục cùng quy tắc.
 
 ## Bảo quản mốc
 - Giữ nguyên ZIP đầy đủ 1.0 và SHA256. Không đóng gói lại từ thư mục demo đã chơi.
